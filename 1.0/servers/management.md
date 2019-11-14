@@ -4,7 +4,7 @@
 
 ## Resetting The Sudo Password
 
-Forge does not store the sudo password and is unable to reset this password for you. To do so, you'll need to contact your server provider.
+Forge does not store the sudo password and is unable to reset this password for you. To reset the password, you'll need to contact your server provider.
 
 Once the password has been reset, Forge will be unable to SSH into your machine as `root`. This prevents you from editing PHP / Nginx configuration files from the Forge UI. To solve this, SSH into your Forge server as `forge` and reset the `root` users password:
 
