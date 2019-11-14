@@ -6,6 +6,13 @@
 
 Laravel Forge is a server management and site deployment service.
 
+## What Forge isn't
+
+Forge does not currently provide:
+
+- Server support
+- Database or file backups
+
 ## Learning More
 
 Laracasts has a comprehensive and **free** [video course](https://laracasts.com/series/learn-laravel-forge) on Forge which you should check out if you're using Forge for the first time.
