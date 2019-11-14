@@ -20,6 +20,7 @@ module.exports = [
         children: prefix('servers', [
             'management',
             'providers',
+            'databases',
         ]),
     },
     {
