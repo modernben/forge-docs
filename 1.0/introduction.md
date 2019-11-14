@@ -17,14 +17,12 @@ Forge does not currently provide:
 
 Laracasts has a comprehensive and **free** [video course](https://laracasts.com/series/learn-laravel-forge) on Forge which you should check out if you're using Forge for the first time.
 
-## Requirements
-
 ## Forge IP Addresses
 
 If you are restricting SSH access to your server using IP whitelisting, you should whitelist the following IP addresses:
 
-- 159.203.161.246
-- 159.203.163.240
+- `159.203.161.246`
+- `159.203.163.240`
 
 :::tip IP Address Changes
 

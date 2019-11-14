@@ -11,6 +11,7 @@ module.exports = [
             'your-account',
             'billing',
             'circles',
+            'source-control',
             'ssh',
         ]),
     },
