@@ -9,7 +9,6 @@ module.exports = [
         collapsable: false,
         children: prefix('accounts', [
             'your-account',
-            'billing',
             'circles',
             'source-control',
             'ssh',
