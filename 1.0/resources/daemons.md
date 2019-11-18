@@ -13,7 +13,7 @@ When creating a new daemon you need to provide Forge with a little information:
 - Command - What are you running? For instance `php artisan websockets:serve`
 - User - Who's running the command? Defaults to `forge`
 - Directory - By default this will run within your site directory.
-- Processes - How many processes shold the command be ran under?
+- Processes - How many processes should the command be ran under?
 
 ## Log Files
 
