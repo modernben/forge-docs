@@ -4,9 +4,18 @@
 
 ## What is Forge?
 
-Laravel Forge is a server management and site deployment service.
+Laravel Forge is a server management and site deployment service. After connecting to your preferred server provider, Forge will provision a new server, installing and configuring:
 
-## What Forge isn't
+- Nginx
+- PHP
+- MySQL / Postgres / MariaDB (if selected)
+- Logrotate
+- Firewalls
+- Opcache
+- Memcached
+- Redis
+
+After a server has provisioned, you can then deploy your custom websites or Wordpress through the Forge panel.
 
 Forge does not currently provide:
 

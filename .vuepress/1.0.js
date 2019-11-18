@@ -20,7 +20,6 @@ module.exports = [
         children: prefix('servers', [
             'management',
             'providers',
-            'databases',
         ]),
     },
     {
@@ -28,6 +27,17 @@ module.exports = [
         collapsable: false,
         children: prefix('sites', [
             'the-basics',
+        ]),
+    },
+    {
+        title: "Resources",
+        collapsable: false,
+        children: prefix('resources', [
+            'daemons',
+            'databases',
+            'monitoring',
+            'network',
+            'scheduler',
         ]),
     },
 ]
