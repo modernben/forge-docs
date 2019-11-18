@@ -28,6 +28,8 @@ If you wish to downgrade to the hobby plan, you'll need to contact support at [f
 
 You can delete your account at any time from the [Subscription page](https://forge.laravel.com/user/profile#/subscription).
 
-:::danger Foo
+:::danger Account Data
+
 Deleting your account will cancel your subscription and delete all of your account's data. **Your data will not be recoverable**; however, your servers will be preserved.
+
 :::
