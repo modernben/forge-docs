@@ -27,6 +27,9 @@ module.exports = [
         collapsable: false,
         children: prefix('sites', [
             'the-basics',
+            'queues',
+            'notifications',
+            'user-isolation',
         ]),
     },
     {
