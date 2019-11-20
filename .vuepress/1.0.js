@@ -27,6 +27,7 @@ module.exports = [
         collapsable: false,
         children: prefix('sites', [
             'the-basics',
+            'deployments',
             'queues',
             'redirects',
             'ssl',
