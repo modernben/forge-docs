@@ -28,6 +28,7 @@ module.exports = [
         children: prefix('sites', [
             'the-basics',
             'queues',
+            'redirects',
             'notifications',
             'user-isolation',
         ]),
