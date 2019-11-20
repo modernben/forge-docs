@@ -29,6 +29,7 @@ module.exports = [
             'the-basics',
             'queues',
             'redirects',
+            'ssl',
             'notifications',
             'user-isolation',
         ]),
