@@ -17,10 +17,9 @@ When creating a new daemon you need to provide Forge with a little information:
 
 ## Log Files
 
-Forge automatically configures your daemon to write into its own log file. Logs can be found in the following directory `/home/forge/.forge/`. Log files are named `daemon-*.log`.
+Forge automatically configures your daemon to write to its own log file. Logs can be found within the `/home/forge/.forge/` directory. Log files are named `daemon-*.log`.
 
-:::tip Using a Custom User
+:::warning User Isolation
 
-If you're using a different username, the `forge` directory will reflect this too.
-
+If you are using User Isolation, you should navigate to the `.forge` directory within the `/home/{username}` directory based on the user that the process belongs to.
 :::
