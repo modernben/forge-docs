@@ -10,21 +10,17 @@ Laravel Forge is a server management and site deployment service. After connecti
 - PHP
 - MySQL / Postgres / MariaDB (if selected)
 - Logrotate
-- Firewalls
+- UFW Firewall
 - Opcache
 - Memcached
 - Redis
+- Automatic Security Updates
 
-After a server has provisioned, you can then deploy your custom websites or Wordpress through the Forge panel.
-
-Forge does not currently provide:
-
-- Server support
-- Database or file backups
+In addition, Forge can assist you in managing scheduled jobs, queue workers, SSL certificates, and more. After a server has provisioned, you can then deploy your PHP / Laravel applications or Wordpress applications using the Forge UI dashboard.
 
 ## Learning More
 
-Laracasts has a comprehensive and **free** [video course](https://laracasts.com/series/learn-laravel-forge) on Forge which you should check out if you're using Forge for the first time.
+Laracasts has a comprehensive and **free** [video course](https://laracasts.com/series/learn-laravel-forge) on Forge. Feel free to review this course if you are new to Laravel Forge and want a video overview of its features.
 
 ## Forge IP Addresses
 
