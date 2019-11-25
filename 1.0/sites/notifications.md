@@ -11,4 +11,4 @@ You can enable deployment notifications for your site from the Forge dashboard. 
 - Stride
 - Slack
 
-Email notifications are enabled by default. Forge will automatically notify you by email for failed deployments.
+By default, Forge will automatically notify you by email for failed deployments.

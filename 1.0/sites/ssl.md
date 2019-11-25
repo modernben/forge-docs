@@ -10,10 +10,9 @@
 
 If you need to install LetsEncrypt for multiple domains, you may separate multiple domains using commas.
 
-
 ### Cloning a LetsEncrypt Certificate
 
-This is not possible, you will need to issue a new certificate.
+Because of the LetsEncrypt renewal process, it is not possible to clone LetsEncrypt certificates. You will need to issue a new certificate.
 
 ## Existing Certificate
 
