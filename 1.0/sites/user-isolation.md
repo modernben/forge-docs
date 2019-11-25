@@ -2,7 +2,7 @@
 
 [[toc]]
 
-## What is User Isolation?
+## Overview
 
 By default, Forge uses the `forge` user that is created as part of the provisioning process for all deployments, daemons, scheduled jobs, PHP-FPM and other processes.
 

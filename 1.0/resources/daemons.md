@@ -2,7 +2,7 @@
 
 [[toc]]
 
-## What are Daemons?
+## Overview
 
 Powered by [Supervisor](http://supervisord.org), daemons are used to keep scripts running. For instance, you could start a daemon to keep a [ReactPHP](http://reactphp.org/) application running.
 
