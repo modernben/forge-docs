@@ -12,7 +12,6 @@ module.exports = [
             'circles',
             'source-control',
             'ssh',
-            'cookbook',
         ]),
     },
     {
