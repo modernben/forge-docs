@@ -12,6 +12,7 @@ module.exports = [
             'circles',
             'source-control',
             'ssh',
+            'cookbook',
         ]),
     },
     {
@@ -20,6 +21,7 @@ module.exports = [
         children: prefix('servers', [
             'management',
             'providers',
+            'cookbook',
         ]),
     },
     {
@@ -33,6 +35,7 @@ module.exports = [
             'ssl',
             'notifications',
             'user-isolation',
+            'cookbook',
         ]),
     },
     {
@@ -44,6 +47,7 @@ module.exports = [
             'monitoring',
             'network',
             'scheduler',
+            'cookbook',
         ]),
     },
 ]
