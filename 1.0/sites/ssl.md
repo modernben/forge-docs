@@ -4,6 +4,8 @@
 
 ## Overview
 
+Forge supports installing custom SSL certificates and using LetsEncrypt to generate free certificates for your websites. 
+
 ## LetsEncrypt
 
 [LetsEncrypt](https://letsencrypt.org) provides free SSL certificates that are recognized across all major browsers.

@@ -2,6 +2,8 @@
 
 [[toc]]
 
+## Overview
+
 Redirects can be setup to automatically take visitors from one page to another and can be created from the "Redirects" tab.
 
 ## Temporary vs Permanent

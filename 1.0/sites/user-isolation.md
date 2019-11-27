@@ -12,3 +12,4 @@ Forge User Isolation creates a new user separate from `forge`. This is particula
 
 The `forge` user is considered a "super user" and is therefore able to read all files within isolated user directories.
 :::
+ 

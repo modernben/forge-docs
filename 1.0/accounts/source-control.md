@@ -10,12 +10,22 @@ Forge currently supports:
 - GitLab
 - Bitbucket
 
-## Forge Unable To Access Git Repository
+## Provider Management
 
-There are several reasons Forge may not be able to access your GitHub / Bitbucket repository. First, you should try refreshing the source control API token that is linked to Forge via your account profile's "Source Control" tab.
+### Connecting Providers
 
-Forge attempts to access your repository using your source control provider's API. The API credentials that will be used are the credentials tied to the account of the person who **owns** the Forge server. Note that if the Forge server is shared with you via a circle, it will use the circle **owner's** API credentials. You should ensure this person has full access to the repository on GitHub.
+You can connect to any of the supported source control providers at any time through the "Source Control" page in the account dashboard. 
 
-### GitHub Organization Repositories
+### Unlinking Providers
 
-Sometimes, if the repository is an organization repository, you will need to grant Forge access to that organization. You may do that using the following link: [https://github.com/settings/connections/applications/fdb28071bd05daebc122](https://github.com/settings/connections/applications/fdb28071bd05daebc122)
+You may remove a connected source control provider by clicking the **Unlink** button next to a provider.
+
+:::tip Deployments
+If you unlink a source control provider, you will be unable to deploy sites that depend on it in the future.
+
+Existing deployments will be unaffected.
+:::
+
+### Refreshing Tokens
+
+You can refresh the access token that Forge uses at any time by clicking the **Refresh Token** button.
