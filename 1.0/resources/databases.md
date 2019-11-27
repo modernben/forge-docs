@@ -2,6 +2,14 @@
 
 [[toc]]
 
+## Overview
+
+When provisioning a server Forge can optionally install a database. You can then use the Forge dashboard to manage the database such as; managing users / databases and resetting the database password. 
+
+:::tip Managing Databases Not Installed By Forge
+Forge is unable to manage databases that were not installed as part of the provisoning process.
+:::
+
 ## Creating a Server With a Database
 
 When creating a new server, you can select to install one of these database servers:
@@ -24,7 +32,11 @@ You can create a new database through the Forge dashboard by clicking on to the 
 
 ## Create a Database User
 
+You can create extra database users through the Forge dashboard. To do so, you'll need to provide the username, password and also select the databases that the new user can access. 
+
 ## Changing the Root / Forge Database Password
+
+To reset the `forge` database user password, you may use the password reset functionality.
 
 ## Connecting to a Database GUI Client
 
