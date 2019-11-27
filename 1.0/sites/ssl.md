@@ -18,4 +18,4 @@ Because of the LetsEncrypt renewal process, it is not possible to clone LetsEncr
 
 ## Existing Certificate
 
-You can install purchased certificates.
+You can also install purchased certificates through the Forge UI.
