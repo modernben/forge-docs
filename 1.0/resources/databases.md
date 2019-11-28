@@ -26,14 +26,6 @@ If you decide not to install a database as part of the provisioning process but 
 1. Re-create the server, but this time selecting your required database server too.
 2. Maintaining a custom database server. In this case, Forge will not be able to manage users or databases for you.
 
-## Creating a Database
-
-You can create a new database through the Forge dashboard by clicking on to the server detail page and clicking **Database** in the sidebar. By default, you only need to enter the name of your new database. The `forge` user will be able to access the database automatically.
-
-## Create a Database User
-
-You can create extra database users through the Forge dashboard. To do so, you'll need to provide the username, password and also select the databases that the new user can access. 
-
 ## Changing the Root / Forge Database Password
 
 To reset the `forge` database user password, you may use the password reset functionality.
@@ -43,3 +35,15 @@ To reset the `forge` database user password, you may use the password reset func
 All Forge servers require SSH key authentication and are not able to be accessed using passwords. Therefore, when using a GUI database client to connect to your Forge database, you will need to use SSH authentication.
 
 When selecting the SSH key to use during authentication, **ensure that you select your private SSH key**. For example, when using the Sequel Pro database client:
+
+## MySQL Management
+
+For servers running MySQL, Forge offers some advanced features.
+
+### Creating a Database
+
+You can create a new database through the Forge dashboard by clicking on to the server detail page and clicking **Database** in the sidebar. By default, you only need to enter the name of your new database. The `forge` user will be able to access the database automatically.
+
+### Create a Database User
+
+You can create extra database users through the Forge dashboard. To do so, you'll need to provide the username, password and also select the databases that the new user can access. 
