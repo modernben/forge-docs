@@ -26,7 +26,7 @@ echo "" | sudo -S service php7.3-fpm reload
 
 To increase the maximum execution time of your scripts you need to update the `max_execution_time` directive in your `php.ini` file. The `php.ini` file is located at `/etc/php/7.3/fpm/php.ini`.
 
-In addition, you will need to update the `fastcgi_read_timeout` directive in the `/etc/nginx/nginx.conf` file to match teh value provided for the `max_execution_time` configuration option you just updated.
+In addition, you will need to update the `fastcgi_read_timeout` directive in the `/etc/nginx/nginx.conf` file to match the value provided for the `max_execution_time` configuration option you just updated.
 
 :::tip Use The Right PHP Version
 When editing the PHP files, be sure to edit the correct file under the PHP version you're using to serve your applications.
