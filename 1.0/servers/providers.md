@@ -11,6 +11,14 @@ Forge supports a range of third-party server providers:
 - Amazon
 - Vultr
 
+### DigitalOcean Backups
+
+If you are using DigitalOcean as your server provider, you may also enable the [DigitalOcean Weekly Backups](https://www.digitalocean.com/community/tutorials/digitalocean-backups-and-snapshots-explained) feature.
+
+:::tip Backups
+Forge is not responsibile for your backups. Enabling this feature simply tells DigitalOcean to make weekly backups of your server. 
+:::
+
 ### Linking Additional Server Providers
 
 You can link additional server providers from your account profile. You can access your account profile via the drop-down selection menu at the top-right of the Forge UI. Once you have accessed your account profile, you should navigate to the "Server Providers" tab.
