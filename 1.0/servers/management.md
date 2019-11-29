@@ -27,3 +27,9 @@ When running a recipe, you will be presented with options that allow you to have
 Typically, security updates are automatically applied to your server on a weekly basis. Forge accomplishes this by enabling and configuring Ubuntu's automated security update service that is built-in to the operating system.
 
 Forge does not automatically update other software such as PHP or MySQL automatically, as doing so could cause your server to suffer downtime if your application's code is not compatible with the upgrade.
+
+## Transferring Servers To Other Users
+
+Servers may be transferred to other Forge accounts from the server's "Meta" tab by providing the email address of the other Forge account.
+
+The receiving Forge account will be sent an email address asking them to confirm the request.
