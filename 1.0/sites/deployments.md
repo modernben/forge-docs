@@ -29,7 +29,7 @@ Deployments may temporarily make your site unavailable. If you need zero downtim
 
 ## Deployment Triggers
 
-If you're using a custom Git service, or want a service like [Travis CI](https://travis-ci.org/) to run your tests before your application is deployed to Forge, you can use deployment triggers. When you commit fresh code, or when your continuous integration service finishes testing your application, instruct the service to make a `GET` or `POST` request to the URL displayed in the Fore dashboard. Making a request to the provided URL will trigger your Forge deployment.
+If you're using a custom Git service, or want a service like [Travis CI](https://travis-ci.org/) to run your tests before your application is deployed to Forge, you can use deployment triggers. When you commit fresh code, or when your continuous integration service finishes testing your application, instruct the service to make a `GET` or `POST` request to the URL displayed in the Forge dashboard. Making a request to the provided URL will trigger your Forge deployment.
 
 Although you can refresh the site token at any time, you will need to update any services which are using this URL.
 
