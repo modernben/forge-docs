@@ -24,6 +24,6 @@ Servers can be removed from a "Balanced Server" at any time from the server's de
 
 ## SSL
 
-Typically, SSL certificates are installed on the individual application servers.However, when using load balancing, the certificate should be configured on the load balancer itself. You can follow the SSL [documentation](/docs/1.0/sites/ssl.html#ssl) for more information.
+Typically, SSL certificates are installed on the individual application servers.However, when using load balancing, the certificate should be configured on the load balancer itself. You can follow the SSL [documentation](/1.0/sites/ssl.html#ssl) for more information.
 
 When using SSL on a load balancer, you must configure the "trusted proxies" in your application. For Laravel application, see the [trusted proxies documentation](https://laravel.com/docs/requests#configuring-trusted-proxies).
