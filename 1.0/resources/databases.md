@@ -36,9 +36,9 @@ All Forge servers require SSH key authentication and are not able to be accessed
 
 When selecting the SSH key to use during authentication, **ensure that you select your private SSH key**. For example, when using the Sequel Pro database client:
 
-## MySQL / MariaDB Management
+## Database Management Within Forge
 
-For servers running MySQL, Forge offers some advanced features.
+For servers running MySQL, MariaDB & PostgreSQL, Forge offers some advanced features.
 
 ### Creating a Database
 
