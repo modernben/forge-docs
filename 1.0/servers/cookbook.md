@@ -31,3 +31,9 @@ In addition, you will need to update the `fastcgi_read_timeout` directive in the
 :::tip Use The Right PHP Version
 When editing the PHP files, be sure to edit the correct file under the PHP version you're using to serve your applications.
 :::
+
+## This Will Exceed Your Droplet Limit
+
+This error is returned by [DigitalOcean](https://digitalocean.com) when you have reached a limit on how many droplets you can create.
+
+You can ask DigitalOcean to increase your droplet limit by contacting their support. Once they have increased your limit, you may create servers in Forge.
