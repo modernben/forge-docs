@@ -33,3 +33,7 @@ Forge does not automatically update other software such as PHP or MySQL automati
 Servers may be transferred to other Forge accounts from the server's "Meta" tab by providing the email address of the other Forge account.
 
 The receiving Forge account will be sent an email address asking them to confirm the request.
+
+:::tip Paid Accounts Only
+You may only transfer servers to a paid account.
+:::
