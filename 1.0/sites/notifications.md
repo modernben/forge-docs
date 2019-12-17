@@ -15,7 +15,7 @@ By default, Forge will automatically notify you by email for failed deployments.
 
 ## Deployment Webhooks
 
-Forge can also send an HTTP POST request to arbitrary URLs after each deployment. The payload of the request will contain the server ID, site ID, deployment status, and the relevant commit information.
+Forge can also send an HTTP POST request to arbitrary URLs after each deployment. The payload of the request will contain the server ID, site ID, deployment status, and the relevant commit information:
 
 Example:
 
