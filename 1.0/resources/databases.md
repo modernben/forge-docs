@@ -28,7 +28,7 @@ If you decide not to install a database as part of the provisioning process but 
 
 ## Changing the Root / Forge Database Password
 
-To reset the `forge` database user password, you may use the password reset functionality.
+To reset the `root` and `forge` database user passwords, you may use the password reset functionality.
 
 ## Connecting to a Database GUI Client
 
