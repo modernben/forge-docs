@@ -16,7 +16,7 @@ Forge supports a range of third-party server providers:
 If you are using DigitalOcean as your server provider, you may also enable the [DigitalOcean Weekly Backups](https://www.digitalocean.com/community/tutorials/digitalocean-backups-and-snapshots-explained) feature.
 
 :::tip Backups
-Forge is not responsibile for your backups. Enabling this feature simply tells DigitalOcean to make weekly backups of your server. 
+Forge is not responsibile for your backups. Enabling this feature simply tells DigitalOcean to make weekly backups of your server.
 :::
 
 ### Linking Additional Server Providers
