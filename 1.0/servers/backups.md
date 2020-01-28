@@ -57,11 +57,11 @@ If you need to take a backup immediately, you can use the **Backup Now** button.
 
 ### Restoring Backups
 
-Backups can be restored at any time by clicking the View button, finding a successful backup log and clicking **Restore**.
+Backups can be restored at any time by clicking the View button, selecting a successful backup and clicking **Restore**.
 
-### Deleting Backups
+### Deleting Backup Configurations
 
-You can delete a backup by clicking the Delete button next to your chosen backup under the **Active Backups** section.
+You can delete a backup configuration by clicking the Delete button next to your chosen backup under the **Active Backups** section.
 
 :::tip Backup Archives
 
@@ -69,9 +69,9 @@ When deleting a backup, your backup archives **will not be removed**. You must r
 
 :::
 
-### Deleting Backup Logs
+### Deleting Backups
 
-If you need to delete an individual backup log, you can do this by clicking the View button on a backup and then clicking the Delete button on the chosen log.
+If you need to delete an individual backup, you can do this by clicking the View button on a backup and then clicking the Delete button on the chosen backup.
 
 :::danger Deleting Backup Logs
 
