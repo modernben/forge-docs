@@ -10,12 +10,17 @@ Forge supports a range of third-party server providers:
 - Linode Cloud
 - Amazon
 - Vultr
+- Hetzner Cloud
+
+:::tip Bring Your Own Provider
+If your preferred provider is not baked into Forge, you can always use the Custom VPS option.
+:::
 
 ### DigitalOcean Backups
 
 If you are using DigitalOcean as your server provider, you may also enable the [DigitalOcean Weekly Backups](https://www.digitalocean.com/community/tutorials/digitalocean-backups-and-snapshots-explained) feature.
 
-:::tip Backups
+:::warning Backups
 Forge is not responsibile for your backups. Enabling this feature simply tells DigitalOcean to make weekly backups of your server.
 :::
 
@@ -25,7 +30,7 @@ You can link additional server providers from your account profile. You can acce
 
 ## Bring Your Own Server
 
-Alongside support for DigitalOcean, Linode, AWS and Vultr, Forge also supports the ability to use your own server. When creating a new server, select the **Custom VPS** option.
+Alongside supporting several providers, Forge also supports the ability to use your own server. When creating a new server, select the **Custom VPS** option.
 
 There are a few requirements to ensure that this works successfully:
 
