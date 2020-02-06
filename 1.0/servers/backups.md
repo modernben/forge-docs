@@ -6,6 +6,10 @@
 
 Forge provides automatic database backups which you can schedule directly within the dashboard. You can choose to backup one or more databases at a custom frequency and restore to a point of time. The backup script is open source and can be [found on GitHub](https://github.com/laravel/forge-database-backups).
 
+:::warning Business Plan Only
+Backups are only available on the Business plan.
+:::
+
 ## Creating Backup Configurations
 
 ### Storage Providers
