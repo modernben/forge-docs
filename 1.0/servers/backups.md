@@ -36,7 +36,15 @@ Within the Forge UI, you can select one frequency:
 - Daily (at a given time)
 - Weekly (on a given day and time)
 
-If you're using the API to create a **Daily** or **Weekly** backup, you may provide any valid time (e.g. `13:37`) to your schedule; however, for the sake of simplicity, the Forge UI allows you to select a time in 30 minute intervals. The time you select is in your local (web browser) time and will be converted to UTC on the server.
+When using the API to create a **Daily** or **Weekly** backup, you may provide any valid time (e.g. `13:37`) to your schedule; however, for the sake of simplicity, the Forge UI allows you to select a time in 30 minute intervals. The time you select is in your local (web browser) time and will be converted to UTC on the server.
+
+#### Customizing The Frequency
+
+If you need to customize the frequency further, you may edit the `/etc/crontab` entry for the backup configuration.
+
+:::warning Editing Cron Entries
+Be careful when editing the `/etc/crontab` file. Any misconfigurations will prevent **all** cron entries from running.
+:::
 
 ### Backup Retention
 
@@ -52,7 +60,7 @@ Forge will also display failed backups within the **Backups** panel of the dashb
 
 ### Deleting Backup Configurations
 
-You can delete a backup configuration by clicking the Delete button next to your chosen backup configuration under the **Backup Configurations** section.
+You can delete a backup configuration by clicking the **Delete** button next to your chosen backup configuration under the **Backup Configurations** section.
 
 :::tip Backup Archives
 
