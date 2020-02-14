@@ -14,6 +14,7 @@ module.exports = [
             'ssh',
             "api",
             'cookbook',
+            'tags',
         ]),
     },
     {
