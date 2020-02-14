@@ -28,6 +28,14 @@ Typically, security updates are automatically applied to your server on a weekly
 
 Forge does not automatically update other software such as PHP or MySQL automatically, as doing so could cause your server to suffer downtime if your application's code is not compatible with the upgrade.
 
+## Archiving Servers
+
+You may archive a server from the Forge UI by clicking the **Archive** button at the bottom of the server's detail page.
+
+:::warning No Data Loss
+Archiving a server will not delete your server from the provider and will leave all data intact. The server will no longer display in listings within the Forge UI.
+:::
+
 ## Transferring Servers To Other Users
 
 Servers may be transferred to other Forge accounts from the server's "Meta" tab by providing the email address of the other Forge account.
