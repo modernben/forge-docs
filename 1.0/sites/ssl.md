@@ -26,4 +26,4 @@ To install a LetsEncrypt certificate with support for wildcard subdomains, you w
 
 ### Cloudflare API Token
 
-If you are using Cloudflare, your Cloudflare API token must have the `Zone.Zone.Read` and `Zone.DNS.Edit` permissions. In addition, the token must have permissions on *all* zones attached to your Cloudflare account.
+If you are using Cloudflare, your Cloudflare API token must have the `Zone.Zone.Read` and `Zone.DNS.Edit` permissions. In addition, the token must have permissions on **all** zones attached to your Cloudflare account.
