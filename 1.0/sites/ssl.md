@@ -22,10 +22,8 @@ You can also install purchased certificates through the Forge UI.
 
 ## Wildcard Subdomain LetsEncrypt Certificates
 
-To install a LetsEncrypt certificate with support for wildcard subdomains, you will need to list both the wildcard subdomain and the root domain in your domain list: `*.domain.com, domain.com`.
-
-LetsEncrypt only supports the “dns-01” challenge type when issuing wildcard certificates, so you will need to provide API credentials for your DNS provider.
+To install a LetsEncrypt certificate with support for wildcard subdomains, you will need to list both the wildcard subdomain and the root domain in your domain list: `*.domain.com, domain.com`. LetsEncrypt only supports the `dns-01` challenge type when issuing wildcard certificates, so you will need to provide API credentials for your DNS provider.
 
 ### Cloudflare API Token
 
-If you are using Cloudflare, your Cloudflare API token must have the Zone.Zone.Read and Zone.DNS.Edit permissions, and must have permissions on *all* zones on your account. 
+If you are using Cloudflare, your Cloudflare API token must have the `Zone.Zone.Read` and `Zone.DNS.Edit` permissions. In addition, the token must have permissions on *all* zones attached to your Cloudflare account.
