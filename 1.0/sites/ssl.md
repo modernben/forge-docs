@@ -28,4 +28,4 @@ LetsEncrypt only supports the “dns-01” challenge type when issuing wildcard 
 
 ### Cloudflare API Token
 
-Your Cloudflare API token must have the Zone.Zone.Read and Zone.DNS.Edit permissions, and must have permissions on *all* zones on your account. 
+If you are using Cloudflare, your Cloudflare API token must have the Zone.Zone.Read and Zone.DNS.Edit permissions, and must have permissions on *all* zones on your account. 
