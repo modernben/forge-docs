@@ -47,3 +47,7 @@ You can create a new database through the Forge dashboard by clicking on to the 
 ### Create a Database User
 
 You can create extra database users through the Forge dashboard. To do so, you'll need to provide the username, password and also select the databases that the new user can access. 
+
+## Upgrading A Database Server
+
+Forge does not provide the ability to upgrade your database server software automatically. If you wish to upgrade your database server, you will need to complete this manually.
