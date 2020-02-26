@@ -14,6 +14,20 @@ You can create your own recipe from the [Recipes](https://forge.laravel.com/reci
 - User to run the script as (`root` or `forge`)
 - Script contents
 
+#### Variables
+
+Forge provides a few variables that can be used to make your recipe more dynamic:
+
+<div v-pre>
+
+- `{{server_id}}` - The ID of the server that the recipe is running on
+- `{{ip_address}}` - The public IP address of the server.
+- `{{private_ip_address}}` - The private IP address of the server.
+
+</div>
+
+Variables must be used as shown above.
+
 ### Managing Recipes
 
 Your existing recipes will be listed on the [Recipes](https://forge.laravel.com/recipes) page, which is where you can edit, run and delete them.
