@@ -2,6 +2,17 @@
 
 [[toc]]
 
+## Overview
+
+Forge makes managing firewalls and connecting servers to internal networks easy from the dashboard.
+
+
+:::tip Manually Managing Rules
+
+If you manually create a `ufw` rule on your server, this will not be reflected in the Forge dashboard. Forge is only aware of rules made through the dashboard.
+
+:::
+
 ## Server Network
 
 Server networks make it painless to use a connected server as a separate database, cache, or queue box.
