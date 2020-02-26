@@ -39,6 +39,7 @@ module.exports = [
             'ssl',
             'notifications',
             'user-isolation',
+            'management',
             'cookbook',
         ]),
     },

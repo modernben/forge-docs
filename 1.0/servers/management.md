@@ -59,3 +59,9 @@ The receiving Forge account will be sent an email address asking them to confirm
 :::tip Paid Accounts Only
 You may only transfer servers to a paid account that has not met its server number limits.
 :::
+
+## Server Logs
+
+Forge provides the ability to view server log files from within the dashboard. You should select a log file from the **View Log** dropdown.
+
+For performance reasons, Forge will only return the last 500 lines from a file. The log file path will be shown in both the dropdown and at the bottom of the log output.
