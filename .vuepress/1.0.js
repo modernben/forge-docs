@@ -49,7 +49,7 @@ module.exports = [
         children: prefix('resources', [
             'daemons',
             'databases',
-            'monitoring',
+            'integrations',
             'network',
             'scheduler',
             'cookbook',
