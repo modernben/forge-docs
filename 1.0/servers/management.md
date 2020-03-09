@@ -26,7 +26,7 @@ Forge provides a few variables that can be used to make your recipe more dynamic
 
 </div>
 
-Variables must be used as shown above.
+When used in a recipe, variables must exactly match the syntax shown above.
 
 ### Managing Recipes
 
