@@ -9,8 +9,7 @@ Forge makes managing firewalls and connecting servers to internal networks easy 
 
 :::tip Manually Managing Rules
 
-If you manually create a `ufw` rule on your server, this will not be reflected in the Forge dashboard. Forge is only aware of rules made through the dashboard.
-
+If you manually create a `ufw` rule on your server, this will not be reflected in the Forge dashboard. Forge is only aware of rules made through the Forge dashboard.
 :::
 
 ## Server Network
