@@ -42,6 +42,18 @@ Typically, security updates are automatically applied to your server on a weekly
 
 Forge does not automatically update other software such as PHP or MySQL automatically, as doing so could cause your server to suffer downtime if your application's code is not compatible with the upgrade.
 
+## IP Addresses
+
+If your servers IP address changes you will need to inform Forge so that it can remain connected and continue to manage your server.
+
+To update the IP address of a server, go to the Meta tab and update the **IP Address** field under the Server Metadata section.
+
+:::tip Rebooting an AWS Server
+
+When rebooting an AWS server, AWS will allocate a new IP address to the server. You will need to update the IP address after a reboot.
+
+:::
+
 ## Archiving Servers
 
 You may archive a server from the Forge UI by clicking the **Archive** button at the bottom of the server's detail page.
