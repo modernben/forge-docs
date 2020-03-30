@@ -25,6 +25,7 @@ module.exports = [
             'providers',
             'load-balancing',
             'backups',
+            'monitoring',
             'cookbook',
         ]),
     },
