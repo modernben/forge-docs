@@ -22,3 +22,7 @@ You can create as many tokens as you need for your individual integrations.
 ## Remove Token
 
 If you no longer need an API token, you may remove it by clicking the **X** button next to the token name.
+
+## Rate Limits
+
+The Forge API currently imposes a rate limit of 30 requests per minute.
