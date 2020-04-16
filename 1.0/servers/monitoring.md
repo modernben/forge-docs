@@ -7,8 +7,7 @@
 Forge can be configured to monitor important stats on your server and email you when the state changes:
 
 - CPU Load
-- Disk Space
-- Free Memory
+- Used Disk Space
 - Used Memory
 
 :::warning Business Plan Only
