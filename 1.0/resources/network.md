@@ -14,7 +14,12 @@ If you manually create a `ufw` rule on your server, this will not be reflected i
 
 ## Server Network
 
-Server networks make it painless to use a connected server as a separate database, cache, or queue box.
+Server networks make it painless to use a connected server as a separate database, cache, or queue box. For a server to be connected to an internal network, it must:
+
+- Be created by the same provider
+- Be using the same server provider credentials
+- Be owned by the same user
+- Be within the same region
 
 ## Firewalls
 
