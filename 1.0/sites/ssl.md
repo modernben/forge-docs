@@ -12,15 +12,13 @@ Forge supports installing custom SSL certificates and using LetsEncrypt to gener
 
 If you need to install LetsEncrypt for multiple domains, you may separate multiple domains using commas.
 
-### Cloning a LetsEncrypt Certificate
+:::warning Cloning a LetsEncrypt Certificate
 
 Because of the LetsEncrypt renewal process, it is not possible to clone LetsEncrypt certificates. You will need to issue a new certificate.
 
-## Existing Certificate
+:::
 
-You can also install purchased certificates through the Forge UI.
-
-## Wildcard Subdomain LetsEncrypt Certificates
+### Wildcard Subdomain LetsEncrypt Certificates
 
 To install a LetsEncrypt certificate with support for wildcard subdomains, you will need to list both the wildcard subdomain and the root domain in your domain list: `*.domain.com, domain.com`. LetsEncrypt only supports the `dns-01` challenge type when issuing wildcard certificates, so you will need to provide API credentials for your DNS provider.
 
@@ -35,4 +33,8 @@ Forge currently supports the following DNS providers:
 
 ### Cloudflare API Token
 
-If you are using Cloudflare, your Cloudflare API token must have the `Zone.Zone.Read` and `Zone.DNS.Edit` permissions. In addition, the token must have permissions on **all** zones attached to your Cloudflare account.
+If you are using [Cloudflare](https://cloudflare.com), your Cloudflare API token must have the `Zone.Zone.Read` and `Zone.DNS.Edit` permissions. In addition, the token must have permissions on **all** zones attached to your Cloudflare account.
+
+## Existing Certificates
+
+You can also install purchased certificates through the Forge UI.
