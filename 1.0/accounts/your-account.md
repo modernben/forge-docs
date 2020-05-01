@@ -22,7 +22,7 @@ If you need to add specific contact or tax information to your receipts, like yo
 
 ### Downgrading To The Hobby Plan
 
-If you wish to downgrade to the hobby plan, please contact support at [forge@laravel.com](mailto:forge@laravel.com).
+If you wish to downgrade to the Hobby plan, please contact support at [forge@laravel.com](mailto:forge@laravel.com). You must have only one server (including archived servers) before submitting a request to downgrade to the Hobby plan.
 
 ### Deleting Your Account
 
