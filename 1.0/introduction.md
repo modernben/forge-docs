@@ -34,3 +34,7 @@ If you are restricting SSH access to your server using IP whitelisting, you shou
 The Forge IP addresses may change from time to time; however, we will always email you several weeks prior to an IP address change.
 
 :::
+
+## Forge API
+
+Forge provides a powerful API that allows you to manage your servers programatically, providing access to the vast majority of Forge features. You can find the Forge API documentation [here](https://forge.laravel.com/api-documentation).
