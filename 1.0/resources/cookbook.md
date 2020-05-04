@@ -17,27 +17,3 @@ Forge uses `ufw` for the firewall, so once you've connected to the server you ne
 ```bash
 ufw allow 22
 ```
-
-## AWS provisioned servers are disappearing from the Forge UI
-
-To avoid this behaviour when provisioning servers in the Forge UI, select Create New for the VPC dropdown option.
-This will ensure that Forge will automatically create and configure the VPC and Security group needed for continues access from the Forge UI. 
-
-Alternatively, if you want to use any existing VPC, ensure that the VPC has IPv4 address range (IPv4 CIDR block) that covers your EC2 instances private IP's, as well as a Security Group associated with that VPC. 
-
-The Security Group needs to have these Inbound Rules:
-
-For TCP Connections
-```bash
-Type: All TCP
-Protocol: TCP
-Port range: 0 - 65535
-Source: 0.0.0.0/0
-```
-For UDP Connections
-```bash
-Type: All UDP
-Protocol: UDP
-Port range: 0 - 65535
-Source: 0.0.0.0/0
-```
