@@ -22,11 +22,11 @@ If you wish to modify the channel that Forge messages, you'll first need to disa
 
 ### Telegram
 
-To enable Telegram notifications, click the **Enable Telegram Notifications** button. Forge will open a new window that takes you to the Telegram page. If you have the desktop application installed, your browser will ask if you wish to open Telegram, alternatively you'll need to login to the web version.
+To enable Telegram notifications, click the **Enable Telegram Notifications** button. Forge will open a new window that takes you to the official Telegram website. If you have the desktop application installed, your browser will ask if you wish to open Telegram, alternatively you'll need to login to the web version.
 
-Click **Open Telegram** and select the group chat that you want Forge to message into. Forge will send the group a message confirming the connection.
+Click **Open Telegram** and select the group chat that you want Forge to send deployment notifications to. Forge will send the group a message confirming the connection.
 
-If you wish to change the group that Forge messages, you'll first need to disable Telegram messages and then re-enable.
+If you wish to change the group that Forge messages, you should disable Telegram notifications and then re-enable the notifications.
 
 ### Webhooks
 
