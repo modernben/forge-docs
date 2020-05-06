@@ -9,7 +9,9 @@ You can enable deployment notifications for your site from the Forge dashboard. 
 - Email
 - Slack
 
+:::tip Default Notifications
 By default, Forge will automatically notify you by email for failed deployments.
+:::
 
 ## Deployment Webhooks
 
