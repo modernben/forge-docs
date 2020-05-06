@@ -8,6 +8,7 @@ You can enable deployment notifications for your site from the Forge Notificatio
 
 - Email
 - Slack
+- Telegram
 
 :::tip Default Notifications
 By default, Forge will automatically notify you by email for failed deployments.
@@ -17,7 +18,15 @@ By default, Forge will automatically notify you by email for failed deployments.
 
 To enable Slack notifications, first enter the Channel name that you wish to send messages to, and then click **Enable Slack Notifications**. You'll be redirected to the Slack app authorization page, where you need to click **Allow**.
 
-If you wish to modify the channel that Forge posts to, you'll first need to disable notifications and then re-enable.
+If you wish to modify the channel that Forge messages, you'll first need to disable Slack notifications and then re-enable.
+
+### Telegram
+
+To enable Telegram notifications, click the **Enable Telegram Notifications** button. Forge will open a new window that takes you to the official Telegram website. If you have the desktop application installed, your browser will ask if you wish to open Telegram, alternatively you'll need to login to the web version.
+
+Click **Open Telegram** and select the group chat that you want Forge to send deployment notifications to. Forge will send the group a message confirming the connection.
+
+If you wish to change the group that Forge messages, you should disable Telegram notifications and then re-enable the notifications.
 
 ### Webhooks
 
