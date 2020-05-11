@@ -19,7 +19,7 @@ When creating a new server, you can select to install one of these database serv
 - MariaDB (10.3)
 - Postgres (12)
 
-As part of the provisioning process, Forge will automatically install the chosen database server and create a default `forge` database, `forge` user, and a long, random password. The database password will be shown upon creating the server alongside the root password and will also be emailed to you.
+As part of the provisioning process, Forge will automatically install the chosen database server and create a default `forge` database, `forge` user, and a secure, random password. The database password will be shown upon creating the server alongside the root password and will also be emailed to you.
 
 If you decide not to install a database as part of the provisioning process but later decide you need one, you have two options:
 
@@ -30,11 +30,17 @@ If you decide not to install a database as part of the provisioning process but 
 
 To reset the `root` and `forge` database user passwords, you may use the password reset functionality.
 
+:::danger Manually changing the root password
+Do not change the `root` or `forge` database user passwords manually or outside of the Forge dashboard. Doing so will prevent Forge from being able to connect to, or manage your database.
+:::
+
 ## Connecting to a Database GUI Client
 
 All Forge servers require SSH key authentication and are not able to be accessed using passwords. Therefore, when using a GUI database client to connect to your Forge database, you will need to use SSH authentication.
 
 When selecting the SSH key to use during authentication, **ensure that you select your private SSH key**. For example, when using the Sequel Pro database client:
+
+![Database GUI](./img/db-gui.png)
 
 ## Database Management Within Forge
 
