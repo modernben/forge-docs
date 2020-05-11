@@ -44,7 +44,7 @@ When selecting the SSH key to use during authentication, **ensure that you selec
 
 ## Database Management Within Forge
 
-For servers running MySQL, MariaDB & PostgreSQL, Forge offers some advanced features.
+For servers running MySQL, MariaDB & PostgreSQL, Forge offers some advanced features which allows it to manage your databases and database users easily.
 
 ### Creating a Database
 
