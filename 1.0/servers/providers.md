@@ -34,7 +34,7 @@ Alongside supporting several providers, Forge also supports the ability to use y
 
 There are a few requirements to ensure that this works successfully:
 
-- The server your connecting to **must be** running a fresh installation of Ubuntu 18.04 x64.
+- The server your connecting to **must be** running a fresh installation of Ubuntu 20.04 x64.
 - Your server **must be** accessible externally over the internet.
 - There **must be** a root user with no password.
 
