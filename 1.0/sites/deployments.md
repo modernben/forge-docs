@@ -27,6 +27,12 @@ You may configure this script to change or add steps to your deployments.
 Deployments may temporarily make your site unavailable. If you need zero downtime deployments, check out [Envoyer](https://envoyer.io).
 :::
 
+### PHP Versions
+
+If you have installed [multiple versions of PHP](/1.0/servers/php.html) your deploy script may need to be updated to use the correct version of PHP.
+
+By default, `php` will always point to the active version of PHP used on the CLI. If you need to use a different version of PHP to that of the default, you must use `php7.x` where `7.x` reflects on the version used. For PHP 5.6, you should use `php56`.
+
 ## Deployment Triggers
 
 If you're using a custom Git service, or want a service like [Travis CI](https://travis-ci.org/) to run your tests before your application is deployed to Forge, you can use deployment triggers. When you commit fresh code, or when your continuous integration service finishes testing your application, instruct the service to make a `GET` or `POST` request to the URL displayed in the Forge dashboard. Making a request to the provided URL will trigger your Forge deployment.
