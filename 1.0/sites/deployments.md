@@ -29,9 +29,7 @@ Deployments may temporarily make your site unavailable. If you need zero downtim
 
 ### Environment Variables
 
-Forge will automatically inject environment variables into your deployment script at runtime. This gives you even more control over how your deployments look, allowing you to handle an unlimited amount of requirements.
-
-The injected variables:
+Forge will automatically inject the following environment variables into your deployment script at runtime:
 
 | Key | Description |
 | ----- | ---- |
@@ -64,6 +62,7 @@ fi
 ```
 
 :::warning Environment Variables
+
 Forge will prefix any injected variables with `FORGE_`. Please do not use this "namespace".
 :::
 
