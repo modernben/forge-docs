@@ -16,6 +16,8 @@ Forge makes it easy to install additional versions alongside the default version
 
 You can install additional versions of PHP between 5.6 and 7.4. Click the **Install** button to start the process. Once the version has been installed, you may select it when creating a site, or switching a site's PHP version.
 
+When you install a version of PHP onto your server, Forge will create and configure the PHP-FPM process for that version. This means that your server will be running multiple versions of PHP at once.
+
 ### CLI
 
 When a version of PHP has been installed you may reference it on the CLI via `php5.6` or `php7.x` (replacing the `x` with the version number). The `php` binary will always point to the active CLI version.
