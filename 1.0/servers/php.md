@@ -6,6 +6,10 @@
 
 Forge makes it easy to install and configure multiple versions of PHP on your server. Each installed version runs its own FPM process, which your [sites can be switched to](/1.0/sites/management.html#php) at any time.
 
+:::danger Manual PHP Installations
+Forge will not be aware of any additional installations of PHP that were performed manually on the server.
+:::
+
 ## Multiple PHP Versions
 
 When provisioning a server, you must decide which version of PHP you want to install by default. The `php` binary will point to the installed version selected at the time of creation.
