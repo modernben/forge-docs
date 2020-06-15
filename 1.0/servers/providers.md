@@ -44,4 +44,4 @@ There are a few requirements to ensure that this works successfully:
 
 During the creation process, you may customize the SSH Port that is used (defaulted to `22`).
 
-If you need to whitelist the Forge IP addresses, you can find them [here](/1.0/introduction.html#forge-ip-addresses).
+If you need to add the Forge IP addresses to an allow list, you can find them [here](/1.0/introduction.html#forge-ip-addresses).
