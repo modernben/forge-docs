@@ -43,7 +43,7 @@ The injected variables:
 | `FORGE_SITE_ID` | The ID of the Forge site that is being deployed to. |
 | `FORGE_PHP` | The `php` binary that is being used by Forge. |
 | `FORGE_QUICK_DEPLOY` | Whether the deploy was triggered by a source control provider webhook. |
-| `FORGE_CUSTOM_DEPLOY` | Whether the deploy was triggered with a custom deploy trigger. |
+| `FORGE_CUSTOM_DEPLOY` | Whether the deploy was triggered with a custom deployment trigger. |
 | `FORGE_MANUAL_DEPLOY` | Whether the deploy was triggered by clicking "Deploy Now". |
 
 You may use these variables as you would any other Bash variable:
