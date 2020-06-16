@@ -28,6 +28,10 @@ Forge is not responsibile for your backups. Enabling this feature only tells Dig
 
 You can link additional server providers from your account profile. You can access your account profile via the drop-down selection menu at the top-right of the Forge UI. Once you have accessed your account profile, you should navigate to the "Server Providers" tab.
 
+### Vultr API Access
+
+The Vultr server provider requires you to add the [Forge IP addresses](/1.0/introduction.html#forge-ip-addresses) to an allowed list, so that Forge can communicate with your servers. Make sure that you do this before provisioning a server via Forge.
+
 ## Bring Your Own Server
 
 Alongside supporting several providers, Forge also supports the ability to use your own server. When creating a new server, select the **Custom VPS** option.
@@ -40,4 +44,4 @@ There are a few requirements to ensure that this works successfully:
 
 During the creation process, you may customize the SSH Port that is used (defaulted to `22`).
 
-If you need to whitelist the Forge IP addresses, you can find them [here](/1.0/introduction.html#forge-ip-addresses).
+If you need to add the Forge IP addresses to an allow list, you can find them [here](/1.0/introduction.html#forge-ip-addresses).

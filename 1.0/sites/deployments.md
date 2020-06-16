@@ -33,6 +33,46 @@ If you have installed [multiple versions of PHP](/1.0/servers/php.html) your dep
 
 By default, `php` will always point to the active version of PHP used on the CLI. If you need to use a different version of PHP to that of the default, you must use `php7.x` where `7.x` reflects on the version used. For PHP 5.6, you should use `php56`.
 
+### Environment Variables
+
+Forge will automatically inject the following environment variables into your deployment script at runtime:
+
+| Key | Description |
+| ----- | ---- |
+| `FORGE_DEPLOY_COMMIT` | The hash of the commit being deployed. |
+| `FORGE_DEPLOY_AUTHOR` | The author of the commit. |
+| `FORGE_DEPLOY_MESSAGE` | The commit message. |
+| `FORGE_REDEPLOY` | Whether this is a re-deployed commit. |
+| `FORGE_SERVER_ID` | The ID of the Forge server that is being deployed to. |
+| `FORGE_SITE_ID` | The ID of the Forge site that is being deployed to. |
+| `FORGE_PHP` | The `php` binary that is being used by the Forge site or server. |
+| `FORGE_PHP_FPM` | The PHP-FPM process name that is being used by Forge. |
+| `FORGE_QUICK_DEPLOY` | Whether the deploy was triggered by a source control provider webhook. |
+| `FORGE_CUSTOM_DEPLOY` | Whether the deploy was triggered with a custom deployment trigger. |
+| `FORGE_MANUAL_DEPLOY` | Whether the deploy was triggered by clicking "Deploy Now". |
+
+You may use these variables as you would any other Bash variable:
+
+```bash
+if [[ $FORGE_MANUAL_DEPLOY -eq 1 ]]; then
+    echo "This deploy was triggered manually."
+fi
+```
+
+For example, you may wish to prevent deployments if the commit message contains "wip":
+
+```bash
+if [[ $FORGE_DEPLOY_MESSAGE =~ "wip" ]]; then
+    echo "WORK IN PROGRESS, DO NOT CONTINUE."
+    exit 1
+fi
+```
+
+:::warning Environment Variables
+
+Forge will prefix any injected variables with `FORGE_`. Please do not use this "namespace".
+:::
+
 ## Deployment Triggers
 
 If you're using a custom Git service, or want a service like [Travis CI](https://travis-ci.org/) to run your tests before your application is deployed to Forge, you can use deployment triggers. When you commit fresh code, or when your continuous integration service finishes testing your application, instruct the service to make a `GET` or `POST` request to the URL displayed in the Forge dashboard. Making a request to the provided URL will trigger your Forge deployment.

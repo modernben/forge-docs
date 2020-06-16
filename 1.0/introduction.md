@@ -24,7 +24,7 @@ Laracasts has a comprehensive and **free** [video course](https://laracasts.com/
 
 ## Forge IP Addresses
 
-If you are restricting SSH access to your server using IP whitelisting, you should whitelist the following IP addresses:
+If you are restricting SSH access to your server using IP allow lists, you should allow the following IP addresses:
 
 - `159.203.161.246`
 - `159.203.163.240`
