@@ -6,10 +6,6 @@
 
 If your server has [multiple versions of PHP](/1.0/servers/php.html) installed, you can switch the version used by your site at any time.
 
-:::warning Non-Isolated Sites Only
-You may only switch the version of PHP used by a site for non-isolated sites.
-:::
-
 When switching the version used by your site, you should ensure that your server has any additional modules installed for that version. Failure to install additional modules may make your site unresponsive.
 
 You will also need to update your [Deploy Script](/1.0/sites/deployments.html#deploy-script), to reload the correct version of PHP-FPM and run the right version of PHP when running any PHP commands.
