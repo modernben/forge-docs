@@ -40,6 +40,7 @@ Forge will automatically inject the following environment variables into your de
 | `FORGE_SERVER_ID` | The ID of the Forge server that is being deployed to. |
 | `FORGE_SITE_ID` | The ID of the Forge site that is being deployed to. |
 | `FORGE_PHP` | The `php` binary that is being used by Forge. |
+| `FORGE_PHP_FPM` | The PHP-FPM process name that is being used by Forge. |
 | `FORGE_QUICK_DEPLOY` | Whether the deploy was triggered by a source control provider webhook. |
 | `FORGE_CUSTOM_DEPLOY` | Whether the deploy was triggered with a custom deployment trigger. |
 | `FORGE_MANUAL_DEPLOY` | Whether the deploy was triggered by clicking "Deploy Now". |
