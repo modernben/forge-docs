@@ -8,7 +8,7 @@ If you have configured 2FA on your account and lose access to your secure token,
 
 ## Forge Is Unable To Access Git Repository
 
-There are several reasons Forge may not be able to access your GitHub / Bitbucket repository. First, you should try refreshing the source control API token that is linked to Forge via your account profile's "Source Control" tab.
+There are several reasons Forge may not be able to access your GitHub, GitLab or Bitbucket repository. First, you should try refreshing the source control API token that is linked to Forge via your account profile's "Source Control" tab.
 
 Forge attempts to access your repository using your source control provider's API. The API credentials that will be used are the credentials tied to the account of the person who **owns** the Forge server. Note that if the Forge server is shared with you via a circle, it will use the circle **owner's** API credentials. You should ensure this person has full access to the repository on GitHub.
 
