@@ -18,10 +18,18 @@ You can choose to backup your databases to:
 
 1. Amazon S3
 2. DigitalOcean Spaces
+3. Custom (S3 Compatible)
 
-For both storage providers you need to provide Forge with:
+For Amazon S3 and DigitalOcean Spaces storage providers you need to provide Forge with:
 
 - Region (`eu-west-2`, `nyc3` etc..)
+- Bucket
+- Access Key
+- Secret Key
+
+When using a Custom provider, you must supply:
+
+- Endpoint (the URL that the host is available at)
 - Bucket
 - Access Key
 - Secret Key
