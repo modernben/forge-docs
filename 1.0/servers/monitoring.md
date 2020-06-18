@@ -12,7 +12,7 @@ Forge can be configured to monitor the following metrics on your server and emai
 
 :::warning Business Plan Only
 
-During the feature launch period, server monitoring is only available on the Business plan.
+Server monitoring is only available on the Business plan.
 :::
 
 ## Creating Monitors
