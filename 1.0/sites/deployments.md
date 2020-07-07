@@ -36,6 +36,12 @@ You may configure this script to change or add steps to your deployments.
 Deployments may temporarily make your site unavailable. If you need zero downtime deployments, check out [Envoyer](https://envoyer.io).
 :::
 
+### PHP Versions
+
+If you have installed [multiple versions of PHP](/1.0/servers/php.html) your deploy script may need to be updated to use the correct version of PHP.
+
+By default, `php` will always point to the active version of PHP used on the CLI. If you need to use a different version of PHP to that of the default, you must use `php7.x` where `7.x` reflects on the version used. For PHP 5.6, you should use `php56`.
+
 ### Environment Variables
 
 Forge will automatically inject the following environment variables into your deployment script at runtime:
@@ -48,7 +54,7 @@ Forge will automatically inject the following environment variables into your de
 | `FORGE_REDEPLOY` | Whether this is a re-deployed commit. |
 | `FORGE_SERVER_ID` | The ID of the Forge server that is being deployed to. |
 | `FORGE_SITE_ID` | The ID of the Forge site that is being deployed to. |
-| `FORGE_PHP` | The `php` binary that is being used by Forge. |
+| `FORGE_PHP` | The `php` binary that is being used by the Forge site or server. |
 | `FORGE_PHP_FPM` | The PHP-FPM process name that is being used by Forge. |
 | `FORGE_QUICK_DEPLOY` | Whether the deploy was triggered by a source control provider webhook. |
 | `FORGE_CUSTOM_DEPLOY` | Whether the deploy was triggered with a custom deployment trigger. |

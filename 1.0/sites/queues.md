@@ -9,3 +9,5 @@ Using Forge Queues you may easily create as many Artisan queue workers as you li
 ## Creating A Queue Worker
 
 You can create a new queue worker within the site's dashboard. The "New Worker" form is a wrapper around the Laravel queue feature. You can read more [here](https://laravel.com/docs/5.8/queues#running-the-queue-worker).
+
+When creating a new queue worker, you may [select a version of PHP](/1.0/servers/php.html) that is already installed on the server.
