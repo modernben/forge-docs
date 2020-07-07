@@ -10,6 +10,11 @@ When switching the version used by your site, you should ensure that your server
 
 You will also need to update your [Deploy Script](/1.0/sites/deployments.html#deploy-script), to reload the correct version of PHP-FPM and run the right version of PHP when running any PHP commands.
 
+## Maintenance Mode
+
+If you have deployed a Laravel application, then you can make use of the maintenance mode feature. Clicking **Enable Maintenance Mode** will run `php artisan down` on your application, which will make your site unavailable. When the site is in maintenance mode, you can then click **Disable Maintenance Mode** to disable the mode and make your site available again.
+>>>>>>> master
+
 ## Site Logs
 
 Forge provides the ability to view site log files from within the dashboard.

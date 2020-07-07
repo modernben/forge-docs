@@ -7,7 +7,8 @@
 Forge provides automatic database backups which you can schedule directly within the dashboard. You can choose to backup one or more databases at a specified frequency and also restore to any of your recent backups. The backup script is open source and can be [found on GitHub](https://github.com/laravel/forge-database-backups).
 
 :::warning Business Plan Only
-During the feature launch period, backups are only available on the Business plan.
+
+Database backups are only available on the Business plan.
 :::
 
 ## Creating Backup Configurations
@@ -18,10 +19,18 @@ You can choose to backup your databases to:
 
 1. Amazon S3
 2. DigitalOcean Spaces
+3. Custom (S3 Compatible)
 
-For both storage providers you need to provide Forge with:
+For Amazon S3 and DigitalOcean Spaces storage providers you need to provide Forge with:
 
 - Region (`eu-west-2`, `nyc3` etc..)
+- Bucket
+- Access Key
+- Secret Key
+
+When using a Custom provider, you must supply:
+
+- Endpoint (the URL that the host is available at)
 - Bucket
 - Access Key
 - Secret Key

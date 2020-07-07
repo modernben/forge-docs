@@ -4,7 +4,16 @@
 
 ## Overview
 
-Deployments is how Forge gets your website from your source control provider on to your server.
+Deployments is how Forge gets your website from your source control provider on to your server, ready for the world to access.
+
+### Environments
+
+Some applications, such as those created with the Laravel framework, may require a `.env` file to configure settings such as databases and caches. You can create and edit your Environment file within the Forge dashboard.
+
+:::tip Automatic Environment Files
+
+If your project contains a `.env.example` file, Forge will automatically copy this and replace some of the settings to match your server's database settings. An empty `.env.example` could result in an empty environment file on the first deploy.
+:::
 
 ## Quick Deploy
 
@@ -23,7 +32,7 @@ Almost all of the deployment process is set by the **Deploy Script** found in th
 
 You may configure this script to change or add steps to your deployments.
 
-:::tip Zero Downtime Deployments
+:::warning Zero Downtime Deployments
 Deployments may temporarily make your site unavailable. If you need zero downtime deployments, check out [Envoyer](https://envoyer.io).
 :::
 
@@ -78,10 +87,6 @@ Forge will prefix any injected variables with `FORGE_`. Please do not use this "
 If you're using a custom Git service, or want a service like [Travis CI](https://travis-ci.org/) to run your tests before your application is deployed to Forge, you can use deployment triggers. When you commit fresh code, or when your continuous integration service finishes testing your application, instruct the service to make a `GET` or `POST` request to the URL displayed in the Forge dashboard. Making a request to the provided URL will trigger your Forge deployment.
 
 Although you can refresh the site token at any time, you will need to update any services which are using this URL.
-
-## Maintenance Mode
-
-If you have deployed a Laravel application, then you can make use of the maintenance mode feature. Clicking **Enable Maintenance Mode** will run `php artisan down` on your application, which will make your site unavailable. When the site is in maintenance mode, you can then click **Disable Maintenance Mode** to disable the mode and make your site available again.
 
 ## Deployment Branch
 
