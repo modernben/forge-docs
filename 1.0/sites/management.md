@@ -13,7 +13,6 @@ You will also need to update your [Deploy Script](/1.0/sites/deployments.html#de
 ## Maintenance Mode
 
 If you have deployed a Laravel application, then you can make use of the maintenance mode feature. Clicking **Enable Maintenance Mode** will run `php artisan down` on your application, which will make your site unavailable. When the site is in maintenance mode, you can then click **Disable Maintenance Mode** to disable the mode and make your site available again.
->>>>>>> master
 
 ## Site Logs
 
