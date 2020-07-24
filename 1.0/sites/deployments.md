@@ -48,17 +48,18 @@ Forge will automatically inject the following environment variables into your de
 
 | Key | Description |
 | ----- | ---- |
-| `FORGE_DEPLOY_COMMIT` | The hash of the commit being deployed. |
+| `FORGE_COMPOSER` | The Composer path, running under the sites version of PHP. |
+| `FORGE_CUSTOM_DEPLOY` | Whether the deploy was triggered with a custom deployment trigger. |
 | `FORGE_DEPLOY_AUTHOR` | The author of the commit. |
+| `FORGE_DEPLOY_COMMIT` | The hash of the commit being deployed. |
 | `FORGE_DEPLOY_MESSAGE` | The commit message. |
+| `FORGE_MANUAL_DEPLOY` | Whether the deploy was triggered by clicking "Deploy Now". |
+| `FORGE_PHP_FPM` | The PHP-FPM process name that is being used by Forge. |
+| `FORGE_PHP` | The `php` binary that is being used by the Forge site or server. |
+| `FORGE_QUICK_DEPLOY` | Whether the deploy was triggered by a source control provider webhook. |
 | `FORGE_REDEPLOY` | Whether this is a re-deployed commit. |
 | `FORGE_SERVER_ID` | The ID of the Forge server that is being deployed to. |
 | `FORGE_SITE_ID` | The ID of the Forge site that is being deployed to. |
-| `FORGE_PHP` | The `php` binary that is being used by the Forge site or server. |
-| `FORGE_PHP_FPM` | The PHP-FPM process name that is being used by Forge. |
-| `FORGE_QUICK_DEPLOY` | Whether the deploy was triggered by a source control provider webhook. |
-| `FORGE_CUSTOM_DEPLOY` | Whether the deploy was triggered with a custom deployment trigger. |
-| `FORGE_MANUAL_DEPLOY` | Whether the deploy was triggered by clicking "Deploy Now". |
 
 You may use these variables as you would any other Bash variable:
 
