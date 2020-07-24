@@ -17,8 +17,11 @@ module.exports = {
 
     themeConfig: {
         // logo: '/assets/img/logo.svg',
-        displayAllHeaders: true,
-        sidebarDepth: 1,
+        displayAllHeaders: false,
+        activeHeaderLinks: false,
+        searchPlaceholder: 'Search...',
+        lastUpdated: 'Last Updated', // string | boolean
+        sidebarDepth: 0,
 
         nav: [
             { text: 'Home', link: 'https://forge.laravel.com' }
