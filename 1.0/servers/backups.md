@@ -28,6 +28,10 @@ For Amazon S3 and DigitalOcean Spaces storage providers you need to provide Forg
 - Access Key
 - Secret Key
 
+:::warning AWS IAM Permissions
+Your AWS IAM user must have write permissions for S3.
+:::
+
 When using a Custom provider, you must supply:
 
 - Endpoint (the URL that the host is available at)
