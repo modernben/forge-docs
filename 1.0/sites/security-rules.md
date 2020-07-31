@@ -22,6 +22,12 @@ If you need to add multiple credentials, you can click the **+** button to add a
 
 Once you're done, click **Add Security Rule**.
 
+:::tip Security Rule Paths
+
+Any valid Nginx `location` string is acceptable when creating a new security rule. For example, `= /docs` will limit only the root of the docs path. Learn more about the location block [here](https://www.digitalocean.com/community/tutorials/understanding-nginx-server-and-location-block-selection-algorithms#location-block-syntax).
+
+:::
+
 ### Deleting a Security Rule
 
 If you no longer need a rule, you can click the red delete button next to the rule under the **Security Rules** table.
