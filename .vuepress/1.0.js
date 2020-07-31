@@ -23,6 +23,7 @@ module.exports = [
         children: prefix('servers', [
             'providers',
             'management',
+            'recipes',
             'php',
             'load-balancing',
             'backups',
