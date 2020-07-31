@@ -39,6 +39,7 @@ module.exports = [
             'deployments',
             'queues',
             'redirects',
+            'security-rules',
             'ssl',
             'notifications',
             'user-isolation',
