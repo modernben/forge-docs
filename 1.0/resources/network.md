@@ -23,7 +23,13 @@ Server networks make it painless to use a connected server as a separate databas
 
 ## Firewalls
 
-Firewalls allow you to open ports on your server to the internet. These can also be configured to be limited to IP addresses. You can configure firewalls from within the Forge dashboard.
+You can configure firewalls from within the Forge dashboard, under the **Network** tab on the server. Firewalls are used to open ports on your server to the internet. For example, you may install FTP and need to open port `21`.
+
+For added security, you can restrict opened ports to specific IP addresses.
+
+### Port Ranges
+
+When creating new firewall rules, you may supply a range of ports to open e.g. `8000:8010` which will open every port from `8000` to `8010`.
 
 ### Default Firewall Rules
 

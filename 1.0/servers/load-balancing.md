@@ -8,15 +8,30 @@ Load balancers are used to distribute web traffic amongst two or more servers an
 
 The key differences between a Forge application server and a load balancer are:
 
-- A database server will not be installed.
-- PHP is not installed.
-- Node.js is not installed.
+- A database server will not be installed
+- PHP is not installed
+- Node.js is not installed
 
 ## Creating Load Balancers
 
 When provisioning a new server, select the **Provision As Load Balancer** option. Once provisioning has completed, you can now create a load balanced site. The site name / domain should match the name of the corresponding site on the servers that will be receiving the traffic.
 
 Once you have added the site to your server, Forge will ask you to select the servers you wish to balance traffic across. The list of servers will include all of the servers in the same private network as the load balancer.
+
+### Load Balancer Methods
+
+Forge allows you to select one of three load balancer methods:
+
+1. Round Robin - the default method, where requests are distributed evenly across all servers
+2. Least Connections - requests are sent to the server with the least connections
+3. IP Hash - The server to which a request is sent is determined from the client IP address.
+
+You may switch the load balancer method at any time, simply by updating your Load Balancer.
+
+:::tip Nginx Load Balancing Methods
+
+You can learn more about how Nginx load balancers work [here](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/#method).
+:::
 
 ## Removing Servers From Load Balancers
 
