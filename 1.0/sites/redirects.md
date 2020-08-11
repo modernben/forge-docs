@@ -4,7 +4,11 @@
 
 ## Overview
 
-Redirects can be setup to automatically take visitors from one page to another and can be created from the "Redirects" tab.
+Redirects can be configured to automatically take visitors from one page to another and can be created from the "Redirects" tab.
+
+## Creating Redirects
+
+Redirects are wrappers around Nginx's `rewrite` rules and can use the full syntax, including regular expressions. For example, you could use `= /` to only match the root of the domain.
 
 ## Temporary vs Permanent
 
@@ -13,7 +17,7 @@ Forge supports two types of redirects:
 - Permanent (HTTP Status Code 301)
 - Temporary (HTTP Status Code 302)
 
-Although both of these redirect types are invisible to the user, the browser will treat them differently.
+Although both of these redirect types are invisible to the user, the browser will treat them differently and it is important to know the difference.
 
 ### Temporary
 
