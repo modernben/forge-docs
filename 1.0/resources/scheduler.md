@@ -13,7 +13,7 @@ You can create scheduled jobs through the Forge dashboard. When creating a new s
 - The frequency to run the command at.
 
 :::tip Scheduled Job Not Running?
-If your scheduled job is not running, you may first want to check that the path to the command is correct
+If your scheduled job is not running, you may first want to check that the path to the command is correct.
 :::
 
 ### Laravel Scheduled Jobs
