@@ -21,7 +21,7 @@ If your preferred provider is not baked into Forge, you can always use the Custo
 If you are using DigitalOcean as your server provider, you may also enable the [DigitalOcean Weekly Backups](https://www.digitalocean.com/community/tutorials/digitalocean-backups-and-snapshots-explained) feature.
 
 :::warning Backups
-Forge is not responsibile for your backups. Enabling this feature only tells DigitalOcean to make weekly backups of your server.
+Forge is not responsible for your backups. Enabling this feature only tells DigitalOcean to make weekly backups of your server.
 :::
 
 ### Linking Additional Server Providers
