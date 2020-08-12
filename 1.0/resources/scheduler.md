@@ -12,6 +12,10 @@ You can create scheduled jobs through the Forge dashboard. When creating a new s
 - The user to run the command as, for example `forge`.
 - The frequency to run the command at.
 
+:::tip Scheduled Job Not Running?
+If your scheduled job is not running, you may first want to check that the path to the command is correct
+:::
+
 ### Laravel Scheduled Jobs
 
 If you've deployed a Laravel application and are using the scheduler feature, you will need to create a scheduled job to run the built in `schedule:run` command. The frequency of this job should be **every minute**.
