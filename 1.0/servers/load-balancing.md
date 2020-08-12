@@ -33,6 +33,20 @@ You may switch the load balancer method at any time, simply by updating your Loa
 You can learn more about how Nginx load balancers work [here](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/#method).
 :::
 
+### Server Weights
+
+Each server that makes up a load balancer can be configured with different weights, indicating that some servers should serve more traffic than others. For example, if you had two servers in your load balancer, one with a weight of 5 and the other with 1, then the first server would be sent five out of every six requests made to the load balancer.
+
+### Backup Servers
+
+Individual servers can be marked as a **backup**, which by default will recieve no traffic. Only when all other servers in the load balancer are down, will the backup become active.
+
+### Pause
+
+You may pause traffic to a specific server being managed by the balancer. While paused, the selected server will no longer serve incoming traffic. You may unpause the server at any time.
+
+This is different from entirely removing it from the load balancer pool, because when you want to bring it back, you'll need to re-enter the configuration of weight and flagging it as a backup server etc.
+
 ## Removing Servers From Load Balancers
 
 Servers can be removed from a "Balanced Server" at any time from the server's detail page.
