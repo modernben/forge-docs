@@ -6,7 +6,7 @@
 
 By default, Forge uses the `forge` user that is created as part of the provisioning process for all deployments, daemons, scheduled jobs, PHP-FPM, and other processes.
 
-When using User Isolation, Forge will create a separate user for the site. This is particularly useful when combined with a Wordpress website in order to prevent plugins from maliciously accessing content in your `forge` (or other isolated user) directories.
+When using User Isolation, Forge will create a separate user for the site. This is particularly useful when combined with a WordPress website in order to prevent plugins from maliciously accessing content in your `forge` (or other isolated user) directories.
 
 :::tip Forge Permissions
 

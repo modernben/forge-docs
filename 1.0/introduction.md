@@ -16,7 +16,7 @@ Laravel Forge is a server management and site deployment service. After connecti
 - Redis
 - Automatic Security Updates
 
-In addition, Forge can assist you in managing scheduled jobs, queue workers, SSL certificates, and more. After a server has provisioned, you can then deploy your PHP / Laravel applications or Wordpress applications using the Forge UI dashboard.
+In addition, Forge can assist you in managing scheduled jobs, queue workers, SSL certificates, and more. After a server has provisioned, you can then deploy your PHP / Laravel applications or WordPress applications using the Forge UI dashboard.
 
 ## Learning More
 
