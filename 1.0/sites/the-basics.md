@@ -41,6 +41,8 @@ If you haven't done so already, you should create a new database and database us
 
 Once installed, you can visit your site's domain name and continue the WordPress installation from your browser.
 
+When installing WordPress into your site, Forge will also install the [WordPress CLI](https://wp-cli.org/), so that you can manage your installation with the `wp` command.
+
 :::tip Securing WordPress
 
 You should continue installing WordPress as soon as Forge has installed it for you, so that it's made secure with your username and password. You could also choose to create a new [Security Rule](/1.0/sites/security-rules.html) before you install WordPress, so that your installation is password protected.
