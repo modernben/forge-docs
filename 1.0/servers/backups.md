@@ -4,7 +4,7 @@
 
 ## Overview
 
-Forge provides automatic database backups which you can schedule directly within the dashboard. You can choose to backup one or more databases at a specified frequency and also restore to any of your recent backups. The backup script is open source and can be [found on GitHub](https://github.com/laravel/forge-database-backups).
+Forge provides automatic database backups that can be scheduled right from the dashboard. You can choose to backup one or more databases at a specified frequency and also restore to any of your recent backups. The backup script is open source and can be [found on GitHub](https://github.com/laravel/forge-database-backups).
 
 :::warning Business Plan Only
 
@@ -86,7 +86,9 @@ If you need to make a backup immediately, you can use the **Backup Now** button.
 
 ### Restoring Backups
 
-You can restore backups from the **Recent Backups** section. Click the **Restore** button next to your chosen backup. Backups will be restored to the database they were created from. If you need to restore a backup to another server or database you may download the backup archive from your cloud storage provider and restore it using the GUI program of your choice, such as TablePlus.
+You can restore backups from the **Recent Backups** section. Click the **Restore** button next to your chosen backup. Backups will be restored to the database they were created from. If the backup configuration contains more than one database, you will be asked to select which database to restore.
+
+If you need to restore a backup to another server or database you may download the backup archive from your cloud storage provider and restore it using the GUI program of your choice, such as TablePlus.
 
 ### Deleting Backups
 
