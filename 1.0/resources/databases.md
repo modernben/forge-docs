@@ -4,7 +4,7 @@
 
 ## Overview
 
-When provisioning a server Forge can optionally install a database. You can then use the Forge dashboard to manage the database such as; managing users / databases and resetting the database password. 
+When provisioning a server Forge can optionally install a database. You can then use the Forge dashboard to manage the database such as; managing users / databases and resetting the database password.
 
 :::tip Managing Databases Not Installed By Forge
 Forge is unable to manage databases that were not installed as part of the provisoning process.
@@ -38,9 +38,9 @@ Do not change the `root` or `forge` database user passwords manually or outside 
 
 All Forge servers require SSH key authentication and are not able to be accessed using passwords. Therefore, when using a GUI database client to connect to your Forge database, you will need to use SSH authentication.
 
-When selecting the SSH key to use during authentication, **ensure that you select your private SSH key**. For example, when using the Sequel Pro database client:
+When selecting the SSH key to use during authentication, **ensure that you select your private SSH key**. For example, when using the [TablePlus](https://tableplus.com) database client:
 
-![Database GUI](./img/db-gui.png)
+<img src="./img/db-gui.png" alt="Connecting with TablePlus" style="width: 75%;">
 
 ## Database Management Within Forge
 
@@ -52,7 +52,7 @@ You can create a new database through the Forge dashboard by clicking on to the 
 
 ### Create a Database User
 
-You can create extra database users through the Forge dashboard. To do so, you'll need to provide the username, password and also select the databases that the new user can access. 
+You can create extra database users through the Forge dashboard. To do so, you'll need to provide the username, password and also select the databases that the new user can access.
 
 ## Upgrading A Database Server
 
