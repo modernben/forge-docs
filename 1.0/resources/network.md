@@ -31,7 +31,16 @@ For added security, you can restrict opened ports to specific IP addresses.
 
 When creating new firewall rules, you may supply a range of ports to open e.g. `8000:8010` which will open every port from `8000` to `8010`.
 
-### Default Firewall Rules
+### Allow or Deny
+
+You may select whether to allow or deny the traffic that matches the rule. By creating a `deny` rule, you'll be preventing traffic from reaching the service.
+
+:::tip Deny Rules Run First
+
+To make `deny` rules work correctly, they are added at a higher priority than `allow`. Each new `deny` rule will be added above existing `deny` rules.
+:::
+
+## Default Firewall Rules
 
 As part of the provisioning process, Forge will automatically configure three rules:
 
