@@ -4,7 +4,7 @@
 
 ## PHP Version
 
-If your server has [multiple versions of PHP](/1.0/servers/php.html) installed, you can switch the version used by your site at any time.
+If your server has [multiple versions of PHP](/1.0/servers/php.html) installed, you can switch the version used by your site at any time by using the Site's **Meta** tab in the Forge dashboard.
 
 When switching the version used by your site, you should ensure that your server has any additional modules installed for that version. Failure to install additional modules may make your site unresponsive.
 
