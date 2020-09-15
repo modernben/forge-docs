@@ -10,6 +10,7 @@ You can enable deployment notifications for your site from the Forge Notificatio
 - Slack
 - Telegram
 - Microsoft Teams
+- Discord
 
 :::tip Default Notifications
 By default, Forge will automatically notify you by email for failed deployments.
@@ -33,7 +34,13 @@ If you wish to change the group that Forge messages, you should disable Telegram
 
 To enable Microsoft Teams notifications, you first need to create a new **Incoming Webhook** connector in your Teams channel of choice. Once Teams has generated a webhook, you need to copy the URL into the **Webhook URL** field, then click **Enable Microsoft Teams Notifications**. Forge will now notify the configured channel for both successful and failed deployments.
 
-If you wish to change the webhook URL, you first need to disable Microsoft teams notifications and then re-enable the notifications.
+If you wish to change the webhook URL, you first need to disable Microsoft Teams notifications and then re-enable the notifications.
+
+### Discord
+
+To enable Discord notifications, you first need to create a new **Incoming Webhook** integration on your Discord server. Once Discord has generated a webhook, you need to copy the URL into the **Webhook URL** field, then click **Enable Discord Notifications**. Forge will now notify the configured channel for both successful and failed deployments.
+
+If you wish to change the webhook URL, you first need to disable Discord notifications and then re-enable the notifications.
 
 ### Webhooks
 
