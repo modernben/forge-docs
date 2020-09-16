@@ -23,6 +23,7 @@ Forge provides a few variables that can be used to make your recipe more dynamic
 - `{{server_id}}` - The ID of the server that the recipe is running on
 - `{{ip_address}}` - The public IP address of the server.
 - `{{private_ip_address}}` - The private IP address of the server.
+- `{{username}}` - The server user who is running the script.
 
 </div>
 
