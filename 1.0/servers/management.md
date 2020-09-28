@@ -10,7 +10,7 @@ Forge does not automatically update other software such as PHP or MySQL automati
 
 ## IP Addresses
 
-If your servers IP address changes you will need to inform Forge so that it can remain connected and continue to manage your server.
+If your servers IP address changes you will need to inform Forge so that it can remain connected and continue to manage your server.
 
 To update the IP address of a server, go to the Meta tab and update the **IP Address** field under the Server Metadata section.
 
