@@ -35,7 +35,7 @@ Servers may be transferred to other Forge accounts from the server's "Meta" tab 
 The receiving Forge account will be sent an email address asking them to confirm the request.
 
 :::tip Paid Accounts Only
-You may only transfer servers to a paid account that has not met its server number limits.
+You may only transfer servers to a paid account that has not reached its server quota.
 :::
 
 ## Server Logs
