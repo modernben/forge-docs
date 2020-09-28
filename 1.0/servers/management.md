@@ -4,11 +4,15 @@
 
 ## Security
 
-Typically, security updates are automatically applied to your server on a weekly basis. Forge accomplishes this by enabling and configuring Ubuntu's automated security update service that is built-in to the operating system.
+Security updates are automatically applied to your server on a weekly basis. Forge accomplishes this by enabling and configuring Ubuntu's automated security update service that is built in to the operating system.
 
 Forge does not automatically update other software such as PHP or MySQL automatically, as doing so could cause your server to suffer downtime if your application's code is not compatible with the upgrade.
 
-## IP Addresses
+## Meta
+
+The server's meta tab can be used to update important details of a server including the name, SSH connection details, timezone and tags.
+
+### IP Addresses
 
 If your servers IP address changes you will need to inform Forge so that it can remain connected and continue to manage your server.
 
@@ -19,6 +23,10 @@ To update the IP address of a server, go to the Meta tab and update the **IP Add
 When rebooting an AWS server, AWS will allocate a new IP address to the server. You will need to update the IP address after a reboot.
 
 :::
+
+### Timezone
+
+By default, all servers are provisioned with a UTC timezone. If you need to change this, you can do so by selecting one of the timezones from the list. Forge is using the `timedatectl` command to modify the system timezone.
 
 ## Archiving Servers
 
