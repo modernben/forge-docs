@@ -54,12 +54,12 @@ Forge also comes with support for installing [phpMyAdmin](https://phpmyadmin.net
 
 If you haven't done so already, you should create a new database and database user. This is used by phpMyAdmin to store the configuration of your databases and users. 
 
-:::tip AWS & Instance Size
-
-The `t2.nano` instance is not large enough to support the features of phpMyAdmin. If installed on this instance size you will experience trouble logging in.
-:::
-
 Once Forge has installed phpMyAdmin, you can then login to your installation using any of your database username and password combinations.
+
+:::warning Server Sizes
+
+Some very small server sizes, such as `t2.nano` on AWS, do not have enough resources to run an application like phpMyAdmin.
+:::
 
 ## Default Sites
 
