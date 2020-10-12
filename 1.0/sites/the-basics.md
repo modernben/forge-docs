@@ -52,9 +52,14 @@ You should continue installing WordPress as soon as Forge has installed it for y
 
 Forge also comes with support for installing [phpMyAdmin](https://phpmyadmin.net) for you, so you can manage your databases from anywhere.
 
-If you haven't done so already, you should create a new database and database user. This is used by phpMyAdmin to store the configuration of your databases and users.
+If you haven't done so already, you should create a new database and database user. This is used by phpMyAdmin to store the configuration of your databases and users. 
 
 Once Forge has installed phpMyAdmin, you can then login to your installation using any of your database username and password combinations.
+
+:::warning Server Sizes
+
+Some very small server sizes, such as `t2.nano` on AWS, do not have enough resources to run an application like phpMyAdmin.
+:::
 
 ## Default Sites
 
