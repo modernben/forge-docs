@@ -54,6 +54,6 @@ You may configure the maximum file upload size through the Forge dashboard. This
 
 You may configure the maximum execution time through the Forge dashboard. This value should be provided in seconds. This can be temporarily overwritten within your application codebase.
 
-### OPCache
+### OPcache
 
 Optimizing the PHP OPcache for production will configure OPcache to store your compiled PHP code in memory to greatly improve performance. If you choose to optimize OPcache for production, you should verify that your deployment script reloads the PHP FPM service at the end of each deployment.
