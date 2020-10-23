@@ -14,6 +14,8 @@ You will also need to update your [Deploy Script](/1.0/sites/deployments.html#de
 
 If you have deployed a Laravel application, then you can make use of the maintenance mode feature. Clicking **Enable Maintenance Mode** will run `php artisan down` on your application, which will make your site unavailable. When the site is in maintenance mode, you can then click **Disable Maintenance Mode** to disable the mode and make your site available again.
 
+Laravel 8 applications can make use of the "secret" option to bypass maintenance mode. Using this option with older versions of Laravel will not work.
+
 ## Site Logs
 
 Forge provides the ability to view site log files from within the dashboard.
