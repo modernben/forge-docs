@@ -4,7 +4,7 @@
 
 ## Overview
 
-Deployments is how Forge gets your website from your source control provider on to your server, ready for the world to access.
+A deployment is the process in which your code is downloaded from your source control provider on to your server, ready for the world to access. Forge tracks the latest 10 deployments so that you can see what was deployed, when and how long it took.
 
 ### Environments
 
@@ -41,6 +41,8 @@ Deployments may temporarily make your site unavailable. If you need zero downtim
 If you have installed [multiple versions of PHP](/1.0/servers/php.html) your deploy script may need to be updated to use the correct version of PHP.
 
 By default, `php` will always point to the active version of PHP used on the CLI. If you need to use a different version of PHP to that of the default, you must use `php7.x` where `7.x` reflects on the version used. For PHP 5.6, you should use `php56`.
+
+The deploy script for newly created sites use the `$FORGE_PHP` [environment variable](#environment-variables) so no extra steps are needed when switching your site's PHP version.
 
 ### Environment Variables
 
