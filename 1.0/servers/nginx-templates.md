@@ -15,6 +15,11 @@ Nginx templates that are not valid will prevent Nginx from properly working and 
 
 You may create your own Nginx templates from within the server's dashboard. When creating a new template, you need to provide a name and the content. Forge will provide you with the default template that you may alter as required.
 
+:::tip TLSv1.3
+
+Although the default template does not show TLSv1.3, Forge will automatically update a site to support it if the server is able to do so.
+:::
+
 ### Template Variables
 
 Forge provides several variables that can be used within your templates to dynamically alter the content for new sites.
