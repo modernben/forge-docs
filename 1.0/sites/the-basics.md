@@ -52,7 +52,7 @@ You should continue installing WordPress as soon as Forge has installed it for y
 
 Forge also comes with support for installing [phpMyAdmin](https://phpmyadmin.net) for you, so you can manage your databases from anywhere.
 
-If you haven't done so already, you should create a new database and database user. This is used by phpMyAdmin to store the configuration of your databases and users. 
+If you haven't done so already, you should create a new database and database user. This is used by phpMyAdmin to store the configuration of your databases and users.
 
 Once Forge has installed phpMyAdmin, you can then login to your installation using any of your database username and password combinations.
 
@@ -66,3 +66,66 @@ Some very small server sizes, such as `t2.nano` on AWS, do not have enough resou
 When you initially provision a Forge server, Forge creates a single site on the server named `default`. This site may be accessed by visiting the IP address of your server in your web browser. This is convenient because sometimes you may not have a particular domain you want to associate with a given server immediately after provisioning.
 
 When you are ready to transition your application to an official domain name, you may rename the site in the "Meta" tab of the site's management panel. After renaming the site, you will no longer be able to access it using the server's IP address. You should then add a DNS `A` record for the domain that points to your server's IP address.
+
+### Default Nginx Template
+
+Below is an example of the default Nginx site configuration that is used by Laravel Forge. Additional Nginx templates may be created in Forge using the "Nginx Templates" panel within your server's management dashboard:
+
+```nginx
+# FORGE CONFIG (DO NOT REMOVE!)
+include forge-conf/your-domain.com/before/*;
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name your-domain.com;
+    server_tokens off;
+    root /home/forge/your-domain.com;
+
+    # FORGE SSL (DO NOT REMOVE!)
+    # ssl_certificate
+    # ssl_certificate_key
+
+    ssl_protocols TLSv1.2 TLSv1.3;
+    # ssl_ciphers XXXXXXX
+    ssl_prefer_server_ciphers on;
+    ssl_dhparam /etc/nginx/dhparams.pem;
+
+    add_header X-Frame-Options "SAMEORIGIN";
+    add_header X-XSS-Protection "1; mode=block";
+    add_header X-Content-Type-Options "nosniff";
+
+    index index.html index.htm index.php;
+
+    charset utf-8;
+
+    # FORGE CONFIG (DO NOT REMOVE!)
+    include forge-conf/your-domain.com/server/*;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location = /robots.txt  { access_log off; log_not_found off; }
+
+    access_log off;
+    error_log  /var/log/nginx/your-domain.com-error.log error;
+
+    error_page 404 /index.php;
+
+    location ~ \.php$ {
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+        fastcgi_index index.php;
+        include fastcgi_params;
+    }
+
+    location ~ /\.(?!well-known).* {
+        deny all;
+    }
+}
+
+# FORGE CONFIG (DO NOT REMOVE!)
+include forge-conf/your-domain.com/after/*;
+```
