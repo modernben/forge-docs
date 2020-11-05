@@ -28,6 +28,7 @@ module.exports = [
             'load-balancing',
             'backups',
             'monitoring',
+            'nginx-templates',
             'cookbook',
         ]),
     },
