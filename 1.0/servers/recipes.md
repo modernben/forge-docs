@@ -14,7 +14,7 @@ You can create your own recipe from the [Recipes](https://forge.laravel.com/reci
 - User to run the script as (`root` or `forge`)
 - Script contents
 
-#### Variables
+### Variables
 
 Forge provides a few variables that can be used to make your recipe more dynamic:
 
