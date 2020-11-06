@@ -14,7 +14,6 @@ Forge is unable to manage databases that were not installed as part of the provi
 
 When creating a new server, you can select to install one of these database servers:
 
-- MySQL (5.7)
 - MySQL (8.0)
 - MariaDB (10.3)
 - Postgres (12)
