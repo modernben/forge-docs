@@ -20,9 +20,9 @@ Because of the LetsEncrypt renewal process, it is not possible to clone LetsEncr
 
 ### Renewing LetsEncrypt Certificates
 
-Forge will **automatically** renew your LetsEncrypt certificates within 21 days or less before expiration, at a random day and time to avoid overwhelming the LetsEncrypt servers.
+Forge will **automatically** renew your LetsEncrypt certificates within 21 days or less before expiration. Renewal will take place at a random day and time to avoid overwhelming the LetsEncrypt servers.
 
-No worries, if something goes wrong while renewing your certificate, Forge will reach the server owner by email.
+If something goes wrong while renewing a certificate, Forge will notify the server owner via email.
 
 ### Wildcard Subdomain LetsEncrypt Certificates
 
