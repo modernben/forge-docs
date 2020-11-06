@@ -18,6 +18,12 @@ Because of the LetsEncrypt renewal process, it is not possible to clone LetsEncr
 
 :::
 
+### Renewing LetsEncrypt Certificates
+
+Forge will **automatically** renew your LetsEncrypt certificates within 21 days or less before expiration. Renewal will take place at a random day and time to avoid overwhelming the LetsEncrypt servers.
+
+If something goes wrong while renewing a certificate, Forge will notify the server owner via email.
+
 ### Wildcard Subdomain LetsEncrypt Certificates
 
 To install a LetsEncrypt certificate with support for wildcard subdomains, you will need to list both the wildcard subdomain and the root domain in your domain list: `*.domain.com, domain.com`. LetsEncrypt only supports the `dns-01` challenge type when issuing wildcard certificates, so you will need to provide API credentials for your DNS provider.
