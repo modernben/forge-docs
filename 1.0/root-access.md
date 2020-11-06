@@ -28,5 +28,5 @@ We take security very seriously and ensure that we do everything we can to prote
 - Forge issues a unique SSH key for each server that it connects to.
 - Passwordless logins are disabled during provisioning.
 - The SSH `PermitRootLogin` setting is left enabled, but only Forge has the SSH key for the root user by default.
-- Each server is issues a unique root password.
+- Each server is issued a unique root password.
 - All ports are blocked by default with UFW. We then explicitly open ports: 22 (SSH), 80 (HTTP) and 443 (HTTPS).
