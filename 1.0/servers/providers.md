@@ -8,13 +8,17 @@ Forge supports a range of third-party server providers:
 
 - DigitalOcean
 - Linode Cloud
-- Amazon
+- Amazon AWS
 - Vultr
 - Hetzner Cloud
 
 :::tip Bring Your Own Provider
 If your preferred provider is not baked into Forge, you can always use the Custom VPS option.
 :::
+
+### Linking Additional Server Providers
+
+You can link additional server providers from your account profile. You can access your account profile via the drop-down selection menu at the top-right of the Forge UI. Once you have accessed your account profile, you should navigate to the "Server Providers" tab.
 
 ### DigitalOcean Backups
 
@@ -24,9 +28,24 @@ If you are using DigitalOcean as your server provider, you may also enable the [
 Forge is not responsible for your backups. Enabling this feature only tells DigitalOcean to make weekly backups of your server.
 :::
 
-### Linking Additional Server Providers
+### Amazon AWS API Access
 
-You can link additional server providers from your account profile. You can access your account profile via the drop-down selection menu at the top-right of the Forge UI. Once you have accessed your account profile, you should navigate to the "Server Providers" tab.
+There are a few requirements you should review to ensure Forge works correctly with AWS:
+
+- AWS IAM user must have  **Programmatic API Access**.
+- AWS IAM user needs to belong to a group with **AmazonEC2FullAccess** and **AmazonVPCFullAccess** managed policies.
+- If you are using an existing VPC, the subnet must be configured to **auto-assign public IP addresses**.
+- If you are using an existing VPC, the default security group **must allow Forge to SSH into the server**. Here is an example:
+
+| Type  | Protocol | Port Range | Source |                    | Description      |
+| ----- | -------- | ---------- | ------ | ------------------ | ---------------- |
+| HTTP  | TCP      | 80         | Custom | 0.0.0.0/0          |                  |
+| HTTP  | TCP      | 80         | Custom | ::/0               |                  |
+| SSH   | TCP      | 22         | Custom | YOUR_IP_ADDRESS/32 | SSH from your IP |
+| SSH   | TCP      | 22         | Custom | 159.203.161.246/32 | SSH from Forge   |
+| SSH   | TCP      | 22         | Custom | 159.203.163.240/32 | SSH from Forge   |
+| HTTPS | TCP      | 443        | Custom | 0.0.0.0/0          |                  |
+| HTTPS | TCP      | 443        | Custom | ::/0               |                  |
 
 ### Vultr API Access
 
