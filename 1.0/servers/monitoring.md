@@ -6,7 +6,7 @@
 
 Forge can be configured to monitor the following metrics on your server and email you when the state changes:
 
-- CPU Load
+- CPU Load Average
 - Used Disk Space
 - Used Memory
 
@@ -14,6 +14,20 @@ Forge can be configured to monitor the following metrics on your server and emai
 
 Server monitoring is only available on the Business plan.
 :::
+
+## Monitor Types
+
+### CPU Load Average
+
+The **CPU Load Average** monitor will track the server's load average. This is based on the average system load over a one minute interval.
+
+### Used Disk Space
+
+The **Used Disk Space** monitor tracks the amount of disk space that has been used on the primary drive.
+
+### Used Memory
+
+The **Used Memory** monitor tracks how much of the RAM is in active use.
 
 ## Creating Monitors
 
