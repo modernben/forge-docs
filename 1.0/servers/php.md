@@ -18,9 +18,20 @@ Forge makes it easy to install additional versions alongside the default version
 
 ### Installation
 
-You can install additional versions of PHP between 5.6 and 7.4. Click the **Install** button to start the process. Once the version has been installed, you may select it when creating a site, or switching a site's PHP version.
+You can install additional versions of PHP between 5.6 and 8.0. Click the **Install** button to start the process. Once the version has been installed, you may select it when creating a site, or switching a site's PHP version.
 
 When you install a version of PHP onto your server, Forge will create and configure the PHP-FPM process for that version. This means that your server will be running multiple versions of PHP at once.
+
+### Uninstall
+
+You can choose to uninstall a version of PHP so long as:
+
+- There are other versions installed.
+- The version you wish to remove is not the server's default for new sites.
+- The version you wish to remove is not the server's default on the CLI.
+- The version you wish to not used by any sites.
+
+To uninstall a version, click the pencil dropdown button and then click **Uninstall PHP x.x**.
 
 ### CLI
 
