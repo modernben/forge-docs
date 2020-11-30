@@ -33,6 +33,10 @@ You may switch the load balancer method at any time, simply by updating your Loa
 You can learn more about how Nginx load balancers work [here](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/#method).
 :::
 
+### Port
+
+If your load balancer needs to forward requests to a server that is listening on a port other than 80 (the default), you can manually specify it.
+
 ### Server Weights
 
 Each server that makes up a load balancer can be configured with different weights, indicating that some servers should serve more traffic than others. For example, if you had two servers in your load balancer, one with a weight of 5 and the other with 1, then the first server would be sent five out of every six requests made to the load balancer.
