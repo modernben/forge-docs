@@ -27,8 +27,8 @@ Almost all of the deployment process is set by the **Deploy Script** found in th
 
 - Changes into the site directory
 - Runs a `git pull` command
-- Install Composer dependencies (depending on the site type)
-- Run `php artisan migrate` if there is an `artisan.php` file found
+- Installs Composer dependencies (depending on the site type)
+- Runs `php artisan migrate` if there is an `artisan.php` file found
 
 You may configure this script to change or add steps to your deployments.
 
