@@ -16,10 +16,10 @@ module.exports = {
     ],
 
     themeConfig: {
-        // logo: '/assets/img/logo.svg',
+        logo: '/assets/img/logo.svg',
         displayAllHeaders: false,
         activeHeaderLinks: false,
-        searchPlaceholder: 'Search...',
+        searchPlaceholder: 'Press / to search',
         lastUpdated: 'Last Updated', // string | boolean
         sidebarDepth: 0,
 
