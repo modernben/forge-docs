@@ -4,7 +4,7 @@
 
 ## Overview
 
-Forge Circles allow you to collaborate with team members that may manage servers and sites on your behalf. You can create as many Circles as you would like and add as many team members as needed to each circle.
+The Forge Circles feature allow you to collaborate with team members that may manage servers and sites on your behalf. You can create as many Circles as you would like and add as many team members as needed to each circle.
 
 :::warning Business Plan Only
 Circles are only available on the Business plan.
@@ -17,6 +17,8 @@ You may create a circle via the [Forge dashboard](https://forge.laravel.com/circ
 1. Invite friends to the circle. You need to enter an email address that is already has an account on Laravel Forge. If they do not have an account, a free account may be created by clicking "Just joining a circle?" during the Forge registration process.
 
 2. Add servers to the Circle. Anyone within this Circle will be able to manage the selected servers.
+
+3. Attach credentials to the circle. This allows you to share the ability for circle members to create new servers on your behalf.
 
 :::tip Inviting Friends
 
