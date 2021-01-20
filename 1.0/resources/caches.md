@@ -4,7 +4,7 @@
 
 ## Overview
 
-When provisioning a server Forge will automatically install Memcache and Redis. By default, neither of these services are exposed to the public and may only be accessed from within your server.
+When provisioning a server, Forge will automatically install Memcache and Redis. By default, neither of these services are exposed to the public and may only be accessed from within your server.
 
 ## Connecting To Redis
 
