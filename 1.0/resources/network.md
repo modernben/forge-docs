@@ -50,4 +50,16 @@ As part of the provisioning process, Forge will automatically configure three ru
 - HTTP - Allow port 80 traffic from any IP Address
 - HTTPS - Allow port 443 traffic from any IP Address
 
-You should note that although incoming traffic is allowed on port 22 for SSH connections, SSH connections that do not use an SSH key are not accepted. Therefore, it is not possible to brute force an SSH connection to your server.
+You should note that although incoming traffic is allowed on port 22 for SSH connections, SSH connections that do not use an SSH key are not accepted. Therefore, it is not possible to brute force an SSH connection to your server. **You should never delete the rule that allows SSH traffic to your server; otherwise, Forge will be unable to connect to or manage your server.**
+
+#### Deleted SSH Firewall Rule
+
+If you have deleted the firewall rule (typically port 22) from the Forge UI or directly on the server, Forge will be unable to connect to the server and will be unable to re-create this rule for you.
+
+To fix this, you will need to access the server directly via your provider and manually add the SSH port again. DigitalOcean allows you to connect remotely through their dashboard.
+
+Forge uses `ufw` for the firewall, so once you've connected to the server you need to run the following as `root`:
+
+```bash
+ufw allow 22
+```
