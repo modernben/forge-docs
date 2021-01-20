@@ -1,8 +1,8 @@
-# SSH
+# SSH Keys / Git Access
 
 [[toc]]
 
-## Overview
+## Account SSH Keys
 
 When provisioning a new server Forge will automatically add any of your [account's SSH keys](/1.0/accounts/ssh.html) to the server. This means that you can SSH onto your server without using a password:
 
@@ -10,11 +10,11 @@ When provisioning a new server Forge will automatically add any of your [account
 ssh forge@IP_ADDRESS
 ```
 
-## Server Git Project Access
+## Server SSH Key / Git Project Access
 
-During the provisoning of a server, Forge will add the server's public SSH key to the SSH keys of the Forge user's connected source control providers. This allows the server to clone any repository that the user has access to.
+When a server is provisioned, an SSH key is generated for the server. This key is stored at `~/.ssh/id_rsa` and its public key counterpart is stored at `~/.ssh/id_rsa.pub`. When creating a server, you will have the option to add this key to your connected source control providers. By doing so, the server will be able to clone any repository that your source control account has access to.
 
-To opt-out of having a server's SSH key added to your source control provider account, uncheck the **Add Server's SSH Key To Source Control Providers** option in the **Create Server** form.
+Alternatively, you may opt-out of having this key added to your source control providers by un-checking the **Add Server's SSH Key To Source Control Providers** option when creating a server. When opting-out, you will need to use site-level [Deploy Keys](#deploy-keys) in order to grant your server access to specific repositories on a source control provider such as GitHub, GitLab, or Bitbucket.
 
 ### Deploy Keys
 
@@ -24,5 +24,5 @@ When adding a new site to the server, you may choose to generate a Deploy Key fo
 
 :::tip Additional Access
 
-You can use Deploy Keys inconjuction with existing servers, where the Forge user does not have or need direct access to a project, but the server should be able to clone it.
+You are also free to use Deploy Keys even on servers that have their SSH key attached to your source control provider accounts, allowing you to grant the server access to clone a repository that the source control account connected to your Forge account does not have collaborator access to.
 :::

@@ -45,5 +45,5 @@ Forge provides a powerful API that allows you to manage your servers programatic
 
 ## Found Something Wrong?
 
-If you find something in the documentation that is misleading or outright wrong, please consider submitting a pull request on [GitHub](https://github.com/laravel/forge-docs).
+If you find something in the documentation that is confusing or incorrect, please consider submitting a pull request on [GitHub](https://github.com/laravel/forge-docs).
 

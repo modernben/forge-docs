@@ -33,6 +33,12 @@ You will also need to provide the repository name. For GitHub, GitLab and Bitbuc
 
 Before you install the repository, you can also decide whether or not to install Composer dependencies. If your project does not contain a `composer.json` file, you should uncheck this option.
 
+#### Deploy Keys
+
+Sometimes you may wish to only grant the Forge user access to a specific repository. This is typically accomplished by adding an SSH key to that repository's "Deploy Keys" on the repository's GitHub, GitLab, or Bitbucket dashboard.
+
+When adding a new site to the server, you may choose to generate a Deploy Key for that application. Once the key has been generated, you can add it to the repository of your choice via your source control provider's dashboard - allowing the server to clone that specific repository.
+
 ### WordPress
 
 Forge can install [WordPress](https://wordpress.org) automatically for you, so you can get right into writing your next blog post.

@@ -2,7 +2,7 @@ module.exports = [
     {
         title: "Getting Started",
         collapsable: false,
-        children: ['introduction', 'root-access'],
+        children: ['introduction'],
     },
     {
         title: "Accounts",
@@ -30,6 +30,7 @@ module.exports = [
             'backups',
             'monitoring',
             'nginx-templates',
+            'provisioning-process',
             'cookbook',
         ]),
     },
