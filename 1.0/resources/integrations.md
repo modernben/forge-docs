@@ -4,7 +4,7 @@
 
 ## Overview
 
-Forge provides different third-party integrations that you can install on your server to provide different features.
+Forge provides a few third-party integrations that you can install on your server to provide additional features to your server. We'll discuss each of these below.
 
 ## Monitoring Integrations
 
