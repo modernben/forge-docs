@@ -26,37 +26,27 @@ Forge allows you to select one of three load balancer methods:
 2. Least Connections - requests are sent to the server with the least connections
 3. IP Hash - The server to which a request is sent is determined from the client IP address.
 
-You may switch the load balancer method at any time, simply by updating your Load Balancer.
+You may switch the load balancer method at any time.
 
 :::tip Nginx Load Balancing Methods
 
-You can learn more about how Nginx load balancers work [here](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/#method).
+You can learn more about how Nginx load balancers work by [consulting the Nginx documentation](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/#method).
 :::
-
-### Port
-
-If your load balancer needs to forward requests to a server that is listening on a port other than 80 (the default), you can manually specify it.
 
 ### Server Weights
 
-Each server that makes up a load balancer can be configured with different weights, indicating that some servers should serve more traffic than others. For example, if you had two servers in your load balancer, one with a weight of 5 and the other with 1, then the first server would be sent five out of every six requests made to the load balancer.
+Each server balanced by the load balancer can be configured with different weights, indicating that some servers should serve more traffic than others. For example, if you have two servers in your load balancer, one with a weight of 5 and the other with 1, then the first server would be sent five out of every six requests made to the load balancer.
 
 ### Backup Servers
 
-Individual servers can be marked as a **backup**, which by default will recieve no traffic. Only when all other servers in the load balancer are down, will the backup become active.
+Individual servers can be marked as a **backup**. Backup servers will recieve no traffic unless all other servers managed by the load balancer are not responding.
 
-### Pause
+### Pausing Traffic
 
 You may pause traffic to a specific server being managed by the balancer. While paused, the selected server will no longer serve incoming traffic. You may unpause the server at any time.
 
-This is different from entirely removing it from the load balancer pool, because when you want to bring it back, you'll need to re-enter the configuration of weight and flagging it as a backup server etc.
-
-## Removing Servers From Load Balancers
-
-Servers can be removed from a "Balanced Server" at any time from the server's detail page.
-
 ## SSL
 
-Typically, SSL certificates are installed on the individual application servers. However, when using load balancing, the certificate should be configured on the load balancer itself. You can follow the SSL [documentation](/1.0/sites/ssl.html#ssl) for more information.
+Typically, SSL certificates are installed on the individual application servers. However, when using load balancing, the certificate should be configured on the load balancer itself. You should consult the [SSL documentation](/1.0/sites/ssl.html#ssl) for more information on managing SSL certificates for your servers, including load balancers.
 
-When using SSL on a load balancer, you must configure the "trusted proxies" in your application. For Laravel application, see the [trusted proxies documentation](https://laravel.com/docs/requests#configuring-trusted-proxies).
+When using SSL on a load balancer, you will likely need to configure the "trusted proxies" for your application. For Laravel applications, consult the [trusted proxies documentation](https://laravel.com/docs/requests#configuring-trusted-proxies).
