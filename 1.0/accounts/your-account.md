@@ -18,6 +18,8 @@ After enabling 2FA, Forge will display:
 
 The recovery codes should be stored securely and can be used if you no longer have access to your 2FA device. Recovery codes can only be used once. You may re-generate the recovery codes at any time from your account's dashboard.
 
+If you have configured 2FA on your account and lose access to your secure token, you will need to email [forge@laravel.com](mailto:forge@laravel.com) to reset it by confirming your identity.
+
 :::tip Using 2FA
 
 We recommend using the [Google Authenticator](https://support.google.com/accounts/answer/1066447) application on your smartphone to manage your Forge 2FA configuration.
