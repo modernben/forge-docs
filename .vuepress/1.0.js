@@ -22,8 +22,8 @@ module.exports = [
         collapsable: false,
         children: prefix('servers', [
             'providers',
-            'ssh',
             'management',
+            'ssh',
             'recipes',
             'php',
             'load-balancing',
