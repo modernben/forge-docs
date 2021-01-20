@@ -26,3 +26,9 @@ We take security very seriously and ensure that we do everything we can to prote
 - Each server is issued a unique root password.
 - All ports are blocked by default with UFW, a secure firewall for Ubuntu. We then explicitly open ports: 22 (SSH), 80 (HTTP) and 443 (HTTPS).
 - Automated security updates are installed using Ubuntu's automated security release program.
+
+## Automated Security Updates
+
+Security updates are automatically applied to your server on a weekly basis. Forge accomplishes this by enabling and configuring Ubuntu's automated security update service that is built in to the operating system.
+
+Forge does not automatically update other software such as PHP or MySQL automatically, as doing so could cause your server to suffer downtime if your application's code is not compatible with the upgrade.

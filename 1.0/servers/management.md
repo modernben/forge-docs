@@ -2,52 +2,33 @@
 
 [[toc]]
 
-## Security
+## Server Metadata
 
-Security updates are automatically applied to your server on a weekly basis. Forge accomplishes this by enabling and configuring Ubuntu's automated security update service that is built in to the operating system.
-
-Forge does not automatically update other software such as PHP or MySQL automatically, as doing so could cause your server to suffer downtime if your application's code is not compatible with the upgrade.
-
-## Meta
-
-The server's meta tab can be used to update important details of a server including the name, SSH connection details, timezone and tags.
+The server dashboard's **Meta** tab can be used to update important details of a server including its name, SSH connection details, timezone, and tags.
 
 ### IP Addresses
 
-If your servers IP address changes you will need to inform Forge so that it can remain connected and continue to manage your server.
-
-To update the IP address of a server, go to the Meta tab and update the **IP Address** field under the Server Metadata section.
+If your server's IP address changes, you should inform Forge so that it can remain connected and continue to manage your server. To update the IP address of a server, navigate to the **Meta** tab and update the **IP Address** field under the Server Metadata section.
 
 :::tip Rebooting an AWS Server
 
-When rebooting an AWS server, AWS will allocate a new IP address to the server. You will need to update the IP address after a reboot.
-
+When rebooting an AWS server, AWS will allocate a new IP address to the server. Therefore, you will need to update the IP address after a server reboot.
 :::
 
 ### Timezone
 
-By default, all servers are provisioned with a UTC timezone. If you need to change this, you can do so by selecting one of the timezones from the list. Forge is using the `timedatectl` command to modify the system timezone.
+By default, all Forge servers are provisioned and configured to use the UTC timezone. If you need to change the timezone used by the server, you can do so by selecting one of the timezones from the list. Forge uses the `timedatectl` command to modify the system's timezone.
 
 ## Archiving Servers
 
-You may archive a server from the Forge UI by clicking the **Archive** button at the bottom of the server's detail page.
+You may archive a server from the Forge UI by clicking the **Archive** button at the bottom of the server's detail page. Archiving a server will remove Forge's access to the server. If necessary, you may reconnect an archived server to Forge via your Forge account profile.
 
-:::warning No Data Loss
-Archiving a server will not delete your server from the provider and will leave all data intact. The server will no longer display in listings within the Forge UI.
-:::
+Archiving a server will not delete your server from the server provider and will not cause any data loss on your server.
 
 ## Transferring Servers To Other Users
 
-Servers may be transferred to other Forge accounts from the server's "Meta" tab by providing the email address of the other Forge account.
+Servers may be transferred to other Forge accounts from the server's **Meta** tab by providing the email address of the Forge account you wish to transfer the server to.
 
-The receiving Forge account will be sent an email address asking them to confirm the request.
+The Forge account that is receiving the server will be receive an email address asking them to confirm the request.
 
-:::tip Paid Accounts Only
-You may only transfer servers to a paid account that has not reached its server quota.
-:::
-
-## Server Logs
-
-Forge provides the ability to view server log files from within the dashboard. You should select a log file from the **View Log** dropdown.
-
-For performance reasons, Forge will only return the last 500 lines from a file. The log file path will be shown in both the dropdown and at the bottom of the log output.
+You may only transfer servers to a Forge accounts with an active subscription that have not reached their server quota.
