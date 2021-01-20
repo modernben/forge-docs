@@ -141,3 +141,32 @@ server {
 # FORGE CONFIG (DO NOT REMOVE!)
 include forge-conf/your-domain.com/after/*;
 ```
+
+## PHP Version
+
+If your server has [multiple versions of PHP](/1.0/servers/php.html) installed, you can switch the version used by your site at any time by using the site's **Meta** tab in the Forge dashboard.
+
+#### Changing A Site's Installed PHP Version
+
+When switching the version used by your site, you should ensure that your server has any additional PHP extensions / modules installed for that version. Failure to install additional modules may make your site unresponsive.
+
+You will also need to update your site's [deployment script](/1.0/sites/deployments.html#deploy-script) to reload the correct version of PHP-FPM and invoke the correct version of PHP when running any PHP commands.
+
+## Maintenance Mode
+
+If you have deployed a Laravel application, Forge allows you to make use of Laravel's maintenance mode feature. Clicking the **Enable Maintenance Mode** button within the site's **App** tab will run the `php artisan down` Artisan command within your application, which will make your site unavailable. When the site is in maintenance mode, you can then click the **Disable Maintenance Mode** button to make your site available again.
+
+#### Maintenance Mode "Secret"
+
+Laravel 8.0+ applications can make use of the "secret" option to bypass maintenance mode. Using this option with older versions of Laravel is not supported.
+
+## Site Logs
+
+Forge also provides the ability to view a site's log files from within the dashboard.
+
+For performance reasons, Forge will only return the last 500 lines from a file. The log file path will be shown in both the dropdown and at the bottom of the log output.
+
+:::tip Laravel Log Files Only
+
+Forge is only able to display log files from Laravel 5+ applications. Both `daily` and `single` log formats are supported. Forge will automatically read the last updated file.
+:::
