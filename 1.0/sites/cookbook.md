@@ -8,7 +8,7 @@ Rarely, your application may get stuck in a "deploying" state. When this occurs,
 
 ## Using User Isolation With Existing Sites
 
-It is currently not possible to use isolated users to manage existing sites that have already been created without user isolation. Instead, you will need to create a new site with the user isolation option enabled.
+It is not currently possible to use isolated users to manage existing sites that have already been created without user isolation. Instead, you will need to create a new site with the user isolation option enabled.
 
 ## Uncommitted Commits During Deployment
 

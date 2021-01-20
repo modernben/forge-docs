@@ -4,16 +4,19 @@
 
 ## Overview
 
-Powered by [Supervisor](http://supervisord.org), daemons are used to keep long-running scripts alive. For instance, you could start a daemon to keep a [ReactPHP](http://reactphp.org/) application running.
+Powered by [Supervisor](http://supervisord.org), daemons are used to keep long-running scripts alive. For instance, you could start a daemon to keep a [ReactPHP](http://reactphp.org/) application running. If the process stops executing, Supervisor will automatically restart the process.
 
 ## Configuring Daemons
 
-When creating a new daemon you need to provide Forge with a little information:
+When creating a new daemon you need to provide Forge with the following information:
 
-- Command - What are you running? For instance `php artisan websockets:serve`.
-- User - Who's running the command? Defaults to `forge`.
-- Directory - The directory in which to run your command from. This can be left empty.
-- Processes - How many instances of the process should be kept running?
+**Command:** The command that should be run by the daemon. For example: `php artisan websockets:serve`.
+
+**User:** The operating system user that should be used to invoke the command. By default, the `forge` user will be used.
+
+**Directory:** The directory in which to run your command from. This can be left empty.
+
+**Processes:** This option determines how many instances of the process should be kept running.
 
 ## Log Files
 
@@ -21,5 +24,5 @@ Forge automatically configures your daemon to write to its own log file. Logs ca
 
 :::warning User Isolation
 
-If you are using User Isolation, you should navigate to the `.forge` directory within the `/home/{username}` directory based on the user that the process belongs to.
+If you are using Forge's user isolation features, you should navigate to the `.forge` directory within the `/home/{username}` directory based on the user that the process belongs to in order to locate the daemon's log files.
 :::
