@@ -4,11 +4,11 @@
 
 ## Overview
 
-By default, Forge uses the `forge` user that is created as part of the provisioning process for all deployments, daemons, scheduled jobs, PHP-FPM, and other processes.
+By default, Forge uses the default `forge` user that is created as part of the server's initial provisioning process for all deployments, daemons, scheduled jobs, PHP-FPM, and other processes.
 
-With User Isolation, Forge will create a separate user for the site. This is particularly useful when combined with a project like a WordPress website in order to prevent plugins from maliciously accessing content in your `forge` (or other isolated user) directories.
+Via Forge's "User Isolation" feature, Forge will create a separate user for a given site. This is particularly useful when combined with a project like a WordPress in order to prevent plugins from maliciously accessing content in your `forge` user (or other isolated user) owned directories.
 
-:::tip Forge Permissions
+:::tip Forge User Permissions
 
 The `forge` user is considered a "super user" and is therefore able to read all files within isolated user directories.
 :::
@@ -21,13 +21,8 @@ Like the `forge` user, newly created isolated users also have limited sudo acces
 sudo -S service php8.0-fpm reload
 ```
 
-If you need further sudo access, you should switch to the `root` user.
+If you need further sudo access, you should switch to the `root` user using the `sudo su` command.
 
 ## Connecting Via SFTP
 
-You can connect to your server via SFTP using the isolated user for managing files and directories manually. We recommend using an SFTP client such as Transmit or Filezilla.
-
-:::warning Upload Your SSH Key
-
-You should first upload your SSH key to the server for the isolated user.
-:::
+You can connect to your server via SFTP as the isolated user. We recommend using an SFTP client such as Transmit or Filezilla. However, before getting started, you should first upload your SSH key to the server for the isolated user.

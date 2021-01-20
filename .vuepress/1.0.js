@@ -44,7 +44,6 @@ module.exports = [
             'redirects',
             'security-rules',
             'ssl',
-            'notifications',
             'user-isolation',
             'cookbook',
         ]),

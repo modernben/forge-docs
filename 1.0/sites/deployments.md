@@ -102,3 +102,66 @@ You may change the branch that is deployed to your site by updating the deployme
 Updating the Git remote from the site's **App** management dashboard will update the Git remote URL on your server; however, the site will not be removed or become unavailable during the process. The updated Git remote must contain the same repository / Git history as the currently installed repository.
 
 You should not use this function to install an entirely different project onto a site. If you would like to install an entirely different project, you should completely uninstall the existing repository using the "Uninstall Repository" button within the **App** dashboard.
+
+## Deployment Notifications
+
+You can enable deployment notifications for your site from the site management dashboard's **Notifications** tab. Forge supports several notification channels:
+
+- Email
+- Slack
+- Telegram
+- Microsoft Teams
+- Discord
+
+:::tip Default Notifications For Failed Deployments
+
+By default, Forge will automatically notify you by email for failed deployments.
+:::
+
+### Slack
+
+To enable Slack notifications, first enter the Channel name that you wish to send messages to, and then click **Enable Slack Notifications**. You will be redirected to the Slack application authorization page, where you need to click **Allow**.
+
+If you wish to modify the channel that Forge messages, you should first disable Slack notifications and then re-enable them for your site.
+
+### Telegram
+
+To enable Telegram notifications, click the **Enable Telegram Notifications** button. Forge will open a new window that takes you to the official Telegram website. If you have the desktop application installed, your browser will ask if you wish to open Telegram. Alternatively, you will need to login to the web version of Telegram.
+
+Click **Open Telegram** and select the group chat that you want Forge to send deployment notifications to. Forge will send the group a message confirming the connection.
+
+If you wish to change the group that Forge messages, you should disable Telegram notifications and then re-enable the notifications.
+
+### Microsoft Teams
+
+To enable Microsoft Teams notifications, you first need to create a new **Incoming Webhook** connector in your Teams channel of choice. Once Teams has generated a webhook, you need to copy the URL into the **Webhook URL** field, then click **Enable Microsoft Teams Notifications**. Forge will now notify the configured channel for both successful and failed deployments.
+
+If you wish to change the webhook URL, you first need to disable Microsoft Teams notifications and then re-enable the notifications.
+
+### Discord
+
+To enable Discord notifications, you first need to create a new **Incoming Webhook** integration on your Discord server. Once Discord has generated a webhook, you need to copy the URL into the **Webhook URL** field, then click **Enable Discord Notifications**. Forge will now notify the configured channel for both successful and failed deployments.
+
+If you wish to change the webhook URL, you first need to disable Discord notifications and then re-enable the notifications.
+
+### Webhooks
+
+Forge can also send an HTTP POST request to arbitrary URLs after each deployment. The payload of the request will contain the server ID, site ID, deployment status, and the relevant commit information:
+
+```json
+{
+  "status": "success",
+  "server": {
+    "id": 123,
+    "name": "my-awesome-server"
+  },
+  "site": {
+    "id": 456,
+    "name": "my-awesome-site.dev"
+  },
+  "commit_hash": "382b0f5185773fa0f67a8ed8056c7759",
+  "commit_url": "https://github.com/johndoe/my-awesome-site/commit/382b0f5185773fa0f67a8ed8056c7759",
+  "commit_author": "John Doe",
+  "commit_message": "deploying!"
+}
+```
