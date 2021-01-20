@@ -4,7 +4,7 @@
 
 ## Overview
 
-Forge can be configured to monitor the following metrics on your server and email you when the state changes:
+Forge can be configured to monitor the following metrics on your server and email you when their state changes:
 
 - CPU Load Average
 - Used Disk Space
@@ -31,7 +31,7 @@ The **Used Memory** monitor tracks how much of the RAM is in active use.
 
 ## Creating Monitors
 
-You may configure a new monitor from the **Monitoring** tab within the server detail page:
+You may configure a new monitor from the **Monitoring** tab within a server's management dashboard. Below is a brief overview of how to create and configure a monitoring metric:
 
 1. Select the metric to monitor.
 2. Select whether the value of the metric should be `>=` or `<=` a threshold.
@@ -49,8 +49,4 @@ Forge will only accept one email address to notify. If you need to notify multip
 
 ### Stat Collection Frequencies
 
-The CPU Load and Used Memory metric data will be collected every minute, whereas the Disk Space metric will be collected hourly.
-
-## Deleting Monitors
-
-You may delete a monitor at any time by clicking the **X** icon next to the monitor in the **Monitors** section.
+The CPU Load and Used Memory metric data will be collected every minute. The Disk Space metric will be collected hourly.
