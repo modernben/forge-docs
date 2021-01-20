@@ -11,7 +11,7 @@ Recipes allow you to save common Bash scripts and run them across any of your se
 You can create your own recipe from the [Recipes dashboard](https://forge.laravel.com/recipes). When creating a new recipe you will be asked to supply:
 
 - The name of the recipe
-- The operating system user that the script should be run as (`root` or `forge`)
+- The operating system user that the script should be run as
 - The recipe script contents
 
 ### Variables
