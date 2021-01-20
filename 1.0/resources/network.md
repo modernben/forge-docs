@@ -4,48 +4,50 @@
 
 ## Overview
 
-Forge makes managing firewalls and connecting servers to internal networks easy from the dashboard.
+Forge allows you to manage your server's firewall as well as configure which servers can connect to other servers via the **Network** management panel within your server's management dashboard.
 
 
 :::tip Manually Managing Rules
 
-If you manually create a `ufw` rule on your server, this will not be reflected in the Forge dashboard. Forge is only aware of rules made through the Forge dashboard.
+If you manually create a `ufw` rule on your server, this will not be reflected in the Forge dashboard. Forge is only aware of rules created via the Forge dashboard.
 :::
 
 ## Server Network
 
-Server networks make it painless to use a connected server as a separate database, cache, or queue box. For a server to be connected to an internal network, it must:
+Server networks make it painless to use a connected server as a separate database, cache, or queue server. For a server to be connected to an internal network, it must:
 
-- Be created by the same provider
-- Be using the same server provider credentials
-- Be owned by the same user
-- Be within the same region
+- Be created by the same provider.
+- Be using the same server provider credentials.
+- Be owned by the same user.
+- Be within the same region.
+
+Once you have granted access from one server to another, you may access the other sever via its private IP address.
 
 ## Firewalls
 
-You can configure firewalls from within the Forge dashboard, under the **Network** tab on the server. Firewalls are used to open ports on your server to the internet. For example, you may install FTP and need to open port `21`.
+You can configure and manage your firewall from within the Forge dashboard via the **Network** tab on the server's management dashboard. Firewalls are used to open ports on your server to the Internet. For example, when using FTP, you may need to open port `21`.
 
 For added security, you can restrict opened ports to specific IP addresses.
 
 ### Port Ranges
 
-When creating new firewall rules, you may supply a range of ports to open e.g. `8000:8010` which will open every port from `8000` to `8010`.
+When creating new firewall rules, you may supply a range of ports to open (`8000:8010`), which will open every port from `8000` to `8010`.
 
-### Allow or Deny
+### Allow / Deny Rules
 
-You may select whether to allow or deny the traffic that matches the rule. By creating a `deny` rule, you'll be preventing traffic from reaching the service.
+You may select whether to allow or deny the traffic that matches a given rule. By creating a `deny` rule, you will be preventing traffic from reaching the service.
 
 :::tip Deny Rules Run First
 
-To make `deny` rules work correctly, they are added at a higher priority than `allow`. Each new `deny` rule will be added above existing `deny` rules.
+To make `deny` rules work correctly, they are added at a higher priority than `allow` rules. Each new `deny` rule will be added above any existing `deny` rules.
 :::
 
 ## Default Firewall Rules
 
 As part of the provisioning process, Forge will automatically configure three rules:
 
-- SSH - Port 22 from any IP Address
-- HTTP - Port 80 from any IP Address
-- HTTPS - Port 443 from any IP Address
+- SSH - Allow port 22 traffic from any IP Address
+- HTTP - Allow port 80 traffic from any IP Address
+- HTTPS - Allow port 443 traffic from any IP Address
 
-You are free to delete and re-create these rules if your requirements are different.
+You should note that although incoming traffic is allowed on port 22 for SSH connections, SSH connections that do not use an SSH key are not accepted. Therefore, it is not possible to brute force an SSH connection to your server.
