@@ -2,63 +2,54 @@
 
 [[toc]]
 
-## Overview
+## Introduction
 
-Forge supports provisioning different types of servers:
+Forge supports provisioning several different types of servers:
 
-- App Server (+ Optional Database & Cache)
-- Web Server (PHP & Nginx)
-- Load Balancer (Nginx)
-- Database Server (MySQL, Postgres or MariaDB)
-- Cache Server (Redis & Memcached)
+- Application Servers
+- Web Servers
+- Load Balancers
+- Database Servers
+- Cache Servers
 
-Recipes can still be ran as part of the provisioning process to further configure your servers.
+Below, we will discuss each of these server types in more detail.
 
 ## Server Types
 
-Each type of server is designed to give you the best configuration.
+### App Servers
 
-### App Server
-
-App Servers are designed include everything you'd need to deploy and run your website in a production environment. They are provisioned with:
+Application servers are designed include everything you need to deploy a typical Laravel / PHP application within a single server. Therefore, they are provisioned with the following software:
 
 - PHP
 - Nginx
-- Database (if selected)
-- Cache (Redis + Memcached)
+- MySQL / Postgres (if selected)
+- Redis
+- Memcached
 - Node.js
 
-### Web Server
+Application servers are the most typical type of server provisioned on Laravel Forge. If your unsure which server type you need, most likely you should provision an application server.
 
-Web Servers are provisoned with:
+### Web Servers
+
+Web servers contain the web server software you need to deploy a typical Laravel / PHP application, but they do not contain a database or cache. Therefore, these servers are meant to be [networked to](./../resources/network.md) other dedicated database and cache servers. Web servers are provisioned with the following software:
 
 - PHP
 - Nginx
 - Node.js
 
-:::tip Use A Dedicated Cache & Database
+### Load Balancers
 
-These servers are designed to be networked to dedicated cache or database servers.
+Load balancers are meant to distribute incoming web traffic across your servers. To do so, load balances use Nginx as a "reverse proxy" to evenly distribute the incoming traffic. Therefore, load balancers are only provisioned with Nginx.
 
-:::
+### Database Servers
 
-### Load Balancer
+Database servers are intended to function as dedicated MySQL / Postgres servers for your application. These servers are meant to be accessed by a dedicated application or web server via Forge's [network management features](./../resources/network.md). Database servers are provisioned with the following software, based on your selections during the server's creation:
 
-Load Balancers are provisoned with:
+- MySQL, MariaDB, or PostgreSQL
 
-- Nginx
+### Cache Servers
 
-### Database Server
-
-Databse Servers are provisioned with:
-
-- MySQL / MariaDB / PostgreSQL
-
-You can continue to manage your databases and database users within the Forge Databases panel.
-
-### Cache Server
-
-Cache Servers are provisoned with:
+Cache servers are intended to function as dedicated Redis / Memcached servers for your application. These servers are meant to be accessed by a dedicated application or web server via Forge's [network management features](./../resources/network.md). Cache servers are provisioned with the following software:
 
 - Redis
 - Memcached

@@ -21,8 +21,8 @@ module.exports = [
         title: "Servers",
         collapsable: false,
         children: prefix('servers', [
-            'types',
             'providers',
+            'types',
             'management',
             'ssh',
             'php',
