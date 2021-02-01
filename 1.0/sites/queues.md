@@ -14,11 +14,11 @@ When creating a new queue worker, you may [select a version of PHP](/1.0/servers
 
 ## Laravel Horizon
 
-If your Laravel application is using [Laravel Horizon](https://laravel.com/docs/horizon) you do NOT need to set up Queue Workers as described above, because Horizon will take care of those for you according to how you configure it inside your application.
+If your Laravel application is using [Laravel Horizon](https://laravel.com/docs/horizon), you should not setup queue workers as described above. Instead, you may enable Horizon on Forge using Forge's "daemon" feature.
 
-Instead, enable Horizon on Forge with these 3 steps:
+First, create a [server daemon](/1.0/resources/daemons.html#configuring-daemons) that executes the `php artisan horizon` Artisan command from your site's root directory.
 
-1. Create a Server [Deamon](/1.0/resources/daemons.html#configuring-daemons) to run `php artisan horizon` from your site's application directory.
-2. Add a `php artisan horizon:terminate` statement to your Site's deploy script, as described in the [Horizon Deployment](https://laravel.com/docs/master/horizon#deploying-horizon) docs.
-3. If you wish to use Horizon's [metrics graphs](https://laravel.com/docs/master/horizon#metrics), be sure to configure the scheduled job for `horizon:snapshot` in your application code and set up a [Scheduler task](/1.0/resources/scheduler.html#scheduled-jobs) for `php artisan schedule:run` in Forge if you haven't already created one.
+Next, add the `php artisan horizon:terminate` Artisan command to your site's deployment script, as described in [Horizon's deployment](https://laravel.com/docs/master/horizon#deploying-horizon) documentation.
+
+Finally, if you wish to use Horizon's [metrics graphs](https://laravel.com/docs/master/horizon#metrics), you should configure the scheduled job for `horizon:snapshot` in your application code. In addition, you should define a [Scheduler task](/1.0/resources/scheduler.html#scheduled-jobs) within Forge for the `php artisan schedule:run` Artisan command if you have not already done so.
 
