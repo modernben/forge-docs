@@ -40,17 +40,6 @@ Web servers contain the web server software you need to deploy a typical Laravel
 - Node.js
 - Supervisor
 
-## Worker Servers
-
-Worker servers are intended to function as dedicated PHP queue workers for your application. These servers do not include Nginx and are not accessible via HTTP. Worker servers are provisioned with the following software:
-
-- PHP
-- Supervisor
-
-### Load Balancers
-
-Load balancers are meant to distribute incoming web traffic across your servers. To do so, load balances use Nginx as a "reverse proxy" to evenly distribute the incoming traffic. Therefore, load balancers are only provisioned with Nginx.
-
 ### Database Servers
 
 Database servers are intended to function as dedicated MySQL / Postgres servers for your application. These servers are meant to be accessed by a dedicated application or web server via Forge's [network management features](./../resources/network.md). Database servers are provisioned with the following software, based on your selections during the server's creation:
@@ -63,3 +52,14 @@ Cache servers are intended to function as dedicated Redis / Memcached servers fo
 
 - Redis
 - Memcached
+
+## Worker Servers
+
+Worker servers are intended to function as dedicated PHP queue workers for your application. These servers are intended to be networked to your web servers, do not include Nginx, and are not accessible via HTTP. Worker servers are provisioned with the following software:
+
+- PHP
+- Supervisor
+
+### Load Balancers
+
+Load balancers are meant to distribute incoming web traffic across your servers. To do so, load balances use Nginx as a "reverse proxy" to evenly distribute the incoming traffic. Therefore, load balancers are only provisioned with Nginx.
