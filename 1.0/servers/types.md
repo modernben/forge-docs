@@ -8,6 +8,7 @@ Forge supports provisioning several different types of servers:
 
 - Application Servers
 - Web Servers
+- Worker Servers
 - Load Balancers
 - Database Servers
 - Cache Servers
@@ -26,6 +27,7 @@ Application servers are designed include everything you need to deploy a typical
 - Redis
 - Memcached
 - Node.js
+- Supervisor
 
 Application servers are the most typical type of server provisioned on Laravel Forge. If your unsure which server type you need, most likely you should provision an application server.
 
@@ -36,6 +38,14 @@ Web servers contain the web server software you need to deploy a typical Laravel
 - PHP
 - Nginx
 - Node.js
+- Supervisor
+
+## Worker Servers
+
+Worker servers are intended to function as dedicated PHP queue workers for your application. These servers do not include Nginx and are not accessible via HTTP. Worker servers are provisioned with the following software:
+
+- PHP
+- Supervisor
 
 ### Load Balancers
 
