@@ -40,25 +40,25 @@ To ensure Forge works correctly with AWS, please review [these requirements](/1.
 
 ## Server Disconnected
 
-There are several reasons why your server may be showing as disconnected. You should check these common solutions before contacting support:
+There are several reasons why your server may have a "disconnected" status. We encourage you to check these common solutions before contacting support:
 
-- Check that the server is accessible. If the server is turned off, you should restart it using your **provider's dashboard**.
-- Check that the  server's public key is added to `/root/.ssh/authorized_keys` and `/home/forge/.ssh/authorized_keys`.
-- If your server is behind a firewall, make sure you have [whitelisted Forge's IP addresses](/1.0/introduction.html#forge-ip-addresses).
-- If you removed Port 22 from the server's firewall, you will need to contact your server provider and ask them to restore the rule.
-- Remove any private keys or lines that do not contain a valid public key from both `/root/.ssh/authorized_keys` and `/home/forge/.ssh/authorized_keys` files.
+- Verify that the server is powered on via your server provider's dashboard. If the server is powered off, you should restart it using your **provider's dashboard**.
+- Verify that the Forge generated public key for the server is included in the `/root/.ssh/authorized_keys` and `/home/forge/.ssh/authorized_keys` files. This key is available via the "Meta" tab of your server's Forge management panel.
+- If your server is behind a firewall, make sure you have [allowed Forge's IP addresses to access the server](/1.0/introduction.html#forge-ip-addresses).
+- If you removed Port 22 from the server's firewall rules, you will need to contact your server provider and ask them to restore the rule. Removing this rule prevents Forge from accessing your server via SSH.
+- Remove any private keys or other lines that do not contain a valid public key from the `/root/.ssh/authorized_keys` and `/home/forge/.ssh/authorized_keys` files.
 
-If you are still seeing connectivity issues, you should also check that the permissions and ownership of these directories and files are correct:
+If you are still experiencing connectivity issues, you should also verify that the permissions and ownership of the following directories and files are correct:
 
 ```bash
-# Fixes the root user (run as root)
+# Fixes the "root" user (run as root)
 
 chown root:root /root
 chown -R root:root /root/.ssh
 chmod 700 /root/.ssh
 chmod 600 /root/.ssh/authorized_keys
 
-# Fixes the forge user
+# Fixes the "forge" user
 
 chown forge:forge /home/forge
 chown -R forge:forge /home/forge/.ssh
@@ -66,7 +66,7 @@ chmod 700 /home/forge/.ssh
 chmod 600 /home/forge/.ssh/authorized_keys
 ```
 
-If after trying all of the above solutions, Forge is still unable to conenct to your server but you can SSH to it, run the following as the `root` user and share the output with Forge support:
+If, after trying all of the above solutions, Forge is still unable to connect to your server but you can still SSH to the server, please run the following command as the `root` user and share the output with Forge support:
 
 ```bash
 grep 'sshd' /var/log/auth.log | tail -n 10
