@@ -37,3 +37,42 @@ This error is returned by [DigitalOcean](https://digitalocean.com) when you have
 ## AWS Provisioned Servers Are Disappearing
 
 To ensure Forge works correctly with AWS, please review [these requirements](/1.0/servers/providers.html#amazon-aws-api-access).
+
+## Server Disconnected
+
+There are several reasons why your server may be showing as disconnected. You should check these common solutions before contacting support:
+
+- Check that the server is accessible. If the server is turned off, you should restart it using your **provider's dashboard**.
+- Check that the  server's public key is added to `/root/.ssh/authorized_keys` and `/home/forge/.ssh/authorized_keys`.
+- If your server is behind a firewall, make sure you have [whitelisted Forge's IP addresses](/1.0/introduction.html#forge-ip-addresses).
+- If you removed Port 22 from the server's firewall, you will need to contact your server provider and ask them to restore the rule.
+- Remove any private keys or lines that do not contain a valid public key from both `/root/.ssh/authorized_keys` and `/home/forge/.ssh/authorized_keys` files.
+
+If you are still seeing connectivity issues, you should also check that the permissions and ownership of these directories and files are correct:
+
+```bash
+# Fixes the root user (run as root)
+
+chown root:root /root
+chown -R root:root /root/.ssh
+chmod 700 /root/.ssh
+chmod 600 /root/.ssh/authorized_keys
+
+# Fixes the forge user
+
+chown forge:forge /home/forge
+chown -R forge:forge /home/forge/.ssh
+chmod 700 /home/forge/.ssh
+chmod 600 /home/forge/.ssh/authorized_keys
+```
+
+If after trying all of the above solutions, Forge is still unable to conenct to your server but you can SSH to it, run the following as the `root` user and share the output with Forge support:
+
+```bash
+grep 'sshd' /var/log/auth.log | tail -n 10
+```
+
+:::danger Forge Management
+
+If Forge is not able to connect to your server, you will not be able to manage it through the Forge dashboard until connectivity is restored.
+:::
