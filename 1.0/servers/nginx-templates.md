@@ -34,6 +34,7 @@ Forge provides several variables that can be used within your templates to dynam
 | `PROXY_PASS` | The PHP socket to listen on, e.g. `unix:/var/run/php/php8.0-fpm.sock` |
 | `ROOT_PATH` | The root of the configured site, e.g. `/home/forge/laravel.com` |
 | `SITE` | The site's name, e.g. `laravel.com`. This differs from `DOMAINS` in that it does not include site aliases. |
+| `SITE_ID` | The site's ID, e.g. `12345` |
 | `USER` | The site's user, e.g. `forge` |
 
 The variables above may be used by wrapping them in double "curly braces". All of the following examples are examples of valid variable usage:
