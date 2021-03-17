@@ -21,6 +21,11 @@ As part of the provisioning process, Forge will automatically install the select
 
 If you later decide to that you need to install a database on your server, you can do so through the server's **Databases** management tab. Once installed, you will then be able to manage your database via Forge.
 
+:::danger Web Servers
+
+If you created a "Web Server", you will not be able to install a database on that server at any point. Web servers are provisioned with the minimum amount of software needed to serve your PHP application only. If you need a database and web server on the same server, you should provision an "App Server".
+:::
+
 ## Changing the Root / Forge Database Password
 
 To reset the `root` and `forge` database user passwords, you may use the password reset functionality provided by Forge's **Databases** management tab.
