@@ -135,7 +135,7 @@ Cache servers are intended to function as dedicated Redis / Memcached servers fo
 - Redis
 - Memcached
 
-## Worker Servers
+### Worker Servers
 
 Worker servers are intended to function as dedicated PHP queue workers for your application. These servers are intended to be networked to your web servers, do not include Nginx, and are not accessible via HTTP. Worker servers are provisioned with the following software:
 
