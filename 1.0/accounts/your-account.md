@@ -29,7 +29,7 @@ We recommend using the [Google Authenticator](https://support.google.com/account
 
 ### Business Receipts
 
-If you need to add specific contact or tax information to your receipts such as your full business name, VAT identification number, or address of record you can add Extra Billing Information from the [Subscription dashboard](https://forge.laravel.com/user/profile#/subscription) of your account. We'll make sure this information is displayed on every receipt.
+If you need to add specific contact or tax information to your receipts such as your full business name, VAT identification number, or address of record you can add extra Billing Information on the [Billing Management](https://forge.laravel.com/billing) page in your account. We'll make sure this information is displayed on every receipt.
 
 ### Downgrading To The Hobby Plan
 
