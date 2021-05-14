@@ -41,6 +41,7 @@ module.exports = [
         children: prefix('sites', [
             'the-basics',
             'deployments',
+            'commands',
             'queues',
             'redirects',
             'security-rules',
