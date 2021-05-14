@@ -40,6 +40,11 @@ When using a custom, S3 compatible provider, you must supply:
 
 You can also choose to provide a storage directory where backups will be restored relative to your bucket root. If left empty, backups will be stored within the root of your bucket.
 
+:::tip Provider Compatibility
+
+Not all providers are 100% compatible with Amazon S3's API. Some providers, such as OVH and Scaleway, require a custom configuration to work correctly, typically through the use of `awscli-plugin-endpoint`.
+:::
+
 ### Frequency Options
 
 Within the Forge database backup dashboard, you can select the frequency at which your database should be backed up:
@@ -47,17 +52,11 @@ Within the Forge database backup dashboard, you can select the frequency at whic
 - Hourly
 - Daily (at a given time)
 - Weekly (on a given day and time)
+- Custom
 
 When using the API to create a **Daily** or **Weekly** backup, you may provide any valid time (e.g. `13:37`) to your schedule; however, for the sake of simplicity, the Forge UI allows you to select a time in 30 minute intervals. The time you select should be in your local time as reported by your web browser.
 
-#### Customizing The Frequency
-
-If you need to customize the frequency further, you may manually edit the `/etc/crontab` entry for the backup configuration on your server.
-
-:::warning Editing Cron Entries
-
-Extreme caution should be taken when editing the `/etc/crontab` file. Any misconfigurations will prevent **all** cron entries from running.
-:::
+The **Custom** option allows you to provide a custom cron expression. You may wish to use a service such as [crontab.guru](https://crontab.guru) to help you generate this.
 
 ### Backup Retention
 
@@ -70,6 +69,12 @@ You may provide an email address to be notified when a backup fails. If you need
 Forge will also display failed backups within the **Backups** panel of the Forge server's management dashboard.
 
 ## Managing Backups
+
+### Editing Backups
+
+Existing backup configurations may be edited via the Forge UI. By default, the configuration details are locked to prevent accidental edits. You may click the **Edit** button to unlock editing.
+
+When changing the databases that should be backed up, Forge will ask for confirmation that it was an intended change. This is to prevent any future data loss in the event that a database is no longer part of a backup configuration.
 
 ### Deleting Backup Configurations
 
