@@ -20,25 +20,25 @@ Circles that you manage will be listed in the **Managed Circles** table.
 
 ### Editing Circles
 
-You can edit a circle by clicking the edit button next to the circle's name. Editing a circle will allow you to:
+You can edit a circle by clicking the "edit" button next to the circle's name. Editing a circle will allow you to:
 
 - Rename the circle
-- Select servers to share with friends
-- Select credentials to share with friends
+- Select servers to share with circle members
+- Select credentials to share with circle members
 
 Shared servers can be managed by the circle members, but cannot be deleted on your behalf.
 
 Shared credentials will allow servers to be created on your behalf. The servers will be created in **your** server provider's account.
 
-### Managing Circle Friends
+### Managing Circle Members
 
-You can manage access to circles by clicking the user button next to the circle's name.
+You can manage access to circles by clicking the "user" button next to the circle's name.
 
-To invite a new friend to the circle, you only need their email address. If the email address provided doesn't match an existing Forge account, the user will be invited to create an account. The invited user may accept the invite from the same email.
+To invite a new member to the circle, you only need their email address. If the email address provided doesn't match an existing Forge account, the user will be invited to create an account. The invited user may accept the invite from the same email.
 
 ## Deleting Circles
 
-You can delete circles via the [Forge circle dashboard](https://forge.laravel.com/circles) by clicking the delete button next to the circle's name. You will be asked to confirm the deletion before it is actually deleted.
+You can delete circles via the [Forge circle dashboard](https://forge.laravel.com/circles) by clicking the "delete" button next to the circle's name. You will be asked to confirm the deletion before it is actually deleted.
 
 :::warning Circle Server Access
 
