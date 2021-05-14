@@ -42,7 +42,7 @@ You can also choose to provide a storage directory where backups will be restore
 
 :::tip Provider Compatibility
 
-Not all providers are 100% compatible with S3's API. Some providers (such as OVH, Scaleway, Alibaba OSS etc) will require a custom configuration to work correctly, typically through the use of `awscli-plugin-endpoint`.
+Not all providers are 100% compatible with Amazon S3's API. Some providers, such as OVH and Scaleway, require a custom configuration to work correctly, typically through the use of `awscli-plugin-endpoint`.
 :::
 
 ### Frequency Options
@@ -72,9 +72,9 @@ Forge will also display failed backups within the **Backups** panel of the Forge
 
 ### Editing Backups
 
-Existing backup configurations may be edited via the Forge UI. By default, the configuration details are locked to prevent accidental edits. You will need to click the **Edit** button to unlock editing.
+Existing backup configurations may be edited via the Forge UI. By default, the configuration details are locked to prevent accidental edits. You may click the **Edit** button to unlock editing.
 
-When changing the databases that should be backed up, Forge will ask for confirmation that it was an intended change. This is to prevent any future data loss, in the event that a database is no longer part of a backup configuration.
+When changing the databases that should be backed up, Forge will ask for confirmation that it was an intended change. This is to prevent any future data loss in the event that a database is no longer part of a backup configuration.
 
 ### Deleting Backup Configurations
 
