@@ -4,7 +4,7 @@
 
 ## Overview
 
-You may execute arbitrary Bash commands from the Commands panel. Commands are executed from within the site's root directory, e.g. `/home/forge/site.com`. If you need to run commands within another directory you may prefix the command:
+You may execute arbitrary Bash commands from the Commands panel. Commands are executed from within the site's root directory, e.g. `/home/forge/site.com`. If you need to run commands within another directory you may prefix the command with a `cd` operation:
 
 ```bash
 cd bin && ./run-command.sh
@@ -16,9 +16,9 @@ Commands can be executed from the Site's **Commands** panel.
 
 Sites that were created with the **General PHP / Laravel** project type will automatically suggest common Laravel Artisan commands.
 
-:::tip No tty
+:::tip Command Input
 
-Commands do not tty, which means that input / passwords cannot be provided.
+Commands are not executed within a tty, which means that input / passwords cannot be provided.
 :::
 
 ## Command History
@@ -30,12 +30,12 @@ The last 10 previously executed commands will be shown within the **Command Hist
 - The date and time of execution.
 - The status of the command.
 
-From the Command History table, it's also possible to view the output of the command, and re-run the command.
+From the Command History table, it's also possible to view the output of the command and re-run the command.
 
 ## Commands vs. Recipes
 
-Whilst [Recipes](/1.0/servers/recipes.md) allow you to also run arbitrary Bash scripts on your servers, Commands differ in a few, but important ways:
+While [Recipes](/1.0/servers/recipes.md) also allow you to run arbitrary Bash scripts on your servers, Commands differ in a few, but important ways:
 
-- Recipes run at a server level, i.e. they cannot dynamically change into a site's directory unless you already know the directory ahead of time.
-- Recipes can be ran at a `root` user level. Commands only run as the site's user, which in most cases will be `forge` unless the site is isolated.
-- Recipes are better equipped for running larger Bash scripts. Commands focus on running a quick command such as `php artisan config:cache`.
+- Recipes run at a server level. In other words, they cannot dynamically change into a site's directory unless you already know the directory ahead of time.
+- Recipes can run using the `root` user. Commands only run as the site's user, which in most cases will be `forge` unless the site is "isolated".
+- Recipes are better equipped for running larger Bash scripts. Commands focus on running short commands, such as `php artisan config:cache`.
