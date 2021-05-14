@@ -12,18 +12,36 @@ Circles are only available on the Business plan.
 
 ## Creating Circles
 
-You may create a circle via the [Forge circle dashboard](https://forge.laravel.com/circles). Once the circle has been created, you may manage it by clicking the edit button next to the circle's name. This will open a modal window that provides several features.
+You may create a circle via the [Forge circle dashboard](https://forge.laravel.com/circles). To create a circle, you only need to provide a name.
 
-First, you are able to invite collaborators to the circle. If the email address provided doesn't match an existing Forge account, the user will be invited to create an account. The invited user may accept the invite from the same email.
+## Managing Circles
 
-Next, you may add servers to the circle. Anyone within the circle will be able to manage the selected servers.
+Circles that you manage will be listed in the **Managed Circles** table.
 
-Finally, you may attach server provider credentials to the circle. This allows you to grant circle members the ability to create new servers on that provider on your behalf.
+### Editing Circles
+
+You can edit a circle by clicking the edit button next to the circle's name. Editing a circle will allow you to:
+
+- Rename the circle
+- Select servers to share with friends
+- Select credentials to share with friends
+
+Shared servers can be managed by the circle members, but cannot be deleted on your behalf.
+
+Shared credentials will allow servers to be created on your behalf. The servers will be created in **your** server provider's account.
+
+### Managing Circle Friends
+
+You can manage access to circles by clicking the user button next to the circle's name.
+
+To invite a new friend to the circle, you only need their email address. If the email address provided doesn't match an existing Forge account, the user will be invited to create an account. The invited user may accept the invite from the same email.
 
 ## Deleting Circles
 
 You can delete circles via the [Forge circle dashboard](https://forge.laravel.com/circles) by clicking the delete button next to the circle's name. You will be asked to confirm the deletion before it is actually deleted.
 
-## Renaming Circles
+:::warning Circle Server Access
 
-Currently, circles may not be renamed from the Forge dashboard, but you can delete the circle and re-create it or contact Forge support.
+When deleting a circle, members will no longer be able to access shared servers or credentials.
+:::
+
