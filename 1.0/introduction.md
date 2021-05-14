@@ -14,6 +14,7 @@ Laravel Forge is a server management and site deployment service. After connecti
 - OPcache
 - Memcached
 - Redis
+- MeiliSearch
 - Automatic Security Updates
 - And more!
 
