@@ -61,6 +61,7 @@ In addition, you should review the following server requirements:
 
 - The server **must be** running a fresh installation of Ubuntu 20.04 x64.
 - The server **must be** accessible externally over the Internet.
+- The server **must have** `root` SSH access enabled.
 - The server requirements **must meet** the following criteria or more: 1 CPU Core with 1GHz, 1GB RAM, and 25GB Disk space.
 
 Please refer to the [Forge IP address documentation](/1.0/introduction.html#forge-ip-addresses) if you restrict SSH access to your server by IP addresses.
