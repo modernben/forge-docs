@@ -29,7 +29,12 @@ For Amazon S3 and DigitalOcean Spaces storage providers you need to provide Forg
 
 :::warning AWS IAM Permissions
 
-When using Amazon S3 to store your database backups, your AWS IAM user must have write permissions for S3.
+When using Amazon S3 to store your database backups, your AWS IAM user must have the following permissions for S3:
+
+- `s3:PutObject`
+- `s3:GetObject`
+- `s3:ListBucket`
+- `s3:DeleteObject`
 :::
 
 When using a custom, S3 compatible provider, you must supply:
