@@ -97,6 +97,26 @@ forge deploy
 forge deploy example.com
 ```
 
+### Updating Environment Variables
+
+You may update a site's environment variables using the `env:pull` and `env:push` commands. The `env:pull` command may be used to pull down an environment file for a given site:
+
+```bash
+forge env:pull
+forge env:pull pestphp.com
+forge env:pull pestphp.com .env
+```
+
+Once this command has been executed, the site's environment file will be placed in your current directory. To update the site's environment variables, simply open and edit this file. When you are done editing the variables, use the `env:push` command to push the variables back to your site:
+
+```bash
+forge env:push
+forge env:push pestphp.com
+forge env:push pestphp.com .env
+```
+
+If your site is utilizing Laravel's "configuration caching" feature or has queue workers, the new variables will not be utilized until the site is deployed again.
+
 ### Viewing Application Logs
 
 You may also view a site's logs directly from the command-line. To do so, use the `site:logs` command:
