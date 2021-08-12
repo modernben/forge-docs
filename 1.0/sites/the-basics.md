@@ -10,7 +10,7 @@ When creating a new site on your Forge server, a variety of configuration option
 
 **Aliases:** Additional domains that the site should respond to.
 
-**Project Type:** This configuration setting indicates if the project installed for your site will be a General PHP / Laravel project, a Symfony project, or a static HTML site. This setting is used to determine the structure of the Nginx configuration file that is created for your site.
+**Project Type:** This configuration setting indicates if the project installed for your site will be a General PHP / Laravel project, Laravel Octane, a Symfony project, or a static HTML site. This setting is used to determine the structure of the Nginx configuration file that is created for your site.
 
 **Web Directory:** The directory that should be publicly accessible via the Internet. For Laravel applications, this is typically the `/public` directory.
 
