@@ -163,7 +163,7 @@ forge tinker example.com
 
 ## Resources
 
-Forge provision servers with a variety of resources and additional software, such as Nginx, MySQL, etc. You may use Forge CLI to perform common actions on those resources.
+Forge provisions servers with a variety of resources and additional software, such as Nginx, MySQL, etc. You may use the Forge CLI to perform common actions on those resources.
 
 ### Checking Resource Status
 
