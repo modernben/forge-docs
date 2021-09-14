@@ -33,6 +33,8 @@ Forge provides several variables that can be used within your templates to dynam
 | `PORT_V6` | The IPV6 port to listen to (`[::]:80`). If the site name is `default`, this variable will also contain `default_server` |
 | `PROXY_PASS` | The PHP socket to listen on, e.g. `unix:/var/run/php/php8.0-fpm.sock` |
 | `ROOT_PATH` | The root of the configured site, e.g. `/home/forge/laravel.com` |
+| `SERVER_PUBLIC_IP` | The public IP address of the server |
+| `SERVER_PRIVATE_IP` | The private IP address of the server, if available |
 | `SITE` | The site's name, e.g. `laravel.com`. This differs from `DOMAINS` in that it does not include site aliases. |
 | `SITE_ID` | The site's ID, e.g. `12345` |
 | `USER` | The site's user, e.g. `forge` |
