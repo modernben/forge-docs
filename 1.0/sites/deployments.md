@@ -63,7 +63,7 @@ Forge will automatically inject the following environment variables into your de
 | `FORGE_SITE_BRANCH` | The name of the branch that is being deployed. |
 | `FORGE_SITE_ID` | The ID of the Forge site that is being deployed to. |
 | `FORGE_SITE_PATH` | The root of the deployment path, e.g. `/home/forge/mysite.com` |
-| `FORGE_SITE_USER` | The name of ther user deploying the site. |
+| `FORGE_SITE_USER` | The name of the user deploying the site. |
 
 You may use these variables as you would any other Bash variable:
 
