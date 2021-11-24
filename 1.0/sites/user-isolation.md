@@ -18,7 +18,7 @@ The `forge` user is considered a "super user" and is therefore able to read all 
 Like the `forge` user, newly created isolated users also have limited sudo access. They may reload the PHP-FPM services requiring a password:
 
 ```bash
-sudo -S service php8.0-fpm reload
+sudo -S service php8.1-fpm reload
 ```
 
 If you need further sudo access, you should switch to the `root` user using the `sudo su` command.

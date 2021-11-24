@@ -179,7 +179,7 @@ forge database:status
 forge nginx:status
 
 forge php:status      # View PHP logs (default PHP version)
-forge php:status 8.0  # View PHP 8.0 logs
+forge php:status 8.1  # View PHP 8.1 logs
 ```
 
 ### Viewing Resources Logs
@@ -196,7 +196,7 @@ forge nginx:logs         # View error logs
 forge nginx:logs access  # View access logs
 
 forge php:logs           # View PHP logs (default PHP version)
-forge php:logs 8.0       # View PHP 8.0 logs
+forge php:logs 8.1       # View PHP 8.1 logs
 ```
 
 ### Restarting Resources
@@ -211,7 +211,7 @@ forge database:restart
 forge nginx:restart
 
 forge php:restart      # Restarts PHP (default PHP version)
-forge php:restart 8.0  # Restarts PHP 8.0
+forge php:restart 8.1  # Restarts PHP 8.1
 ```
 
 ### Connecting To Resources Locally

@@ -39,7 +39,7 @@ Deployments may make your site unavailable for a brief moment. If you need absol
 
 If you have installed [multiple versions of PHP](/1.0/servers/php.html) on your server, your deploy script may need to be updated to use the correct version of PHP.
 
-By default, `php` will always point to the active version of PHP used on the CLI. If you need to use a different version of PHP, you must use `phpx.x` where `x.x` reflects on the version used (e.g. `php8.0`) when invoking PHP commands.
+By default, `php` will always point to the active version of PHP used on the CLI. If you need to use a different version of PHP, you must use `phpx.x` where `x.x` reflects on the version used (e.g. `php8.1`) when invoking PHP commands.
 
 The deploy script for newly created sites uses the `$FORGE_PHP` [environment variable](#environment-variables). This environment variable will always contain the current PHP binary configured for the site, so no additional changes are needed to your deployment script when using this variable and switching your site's PHP version.
 
