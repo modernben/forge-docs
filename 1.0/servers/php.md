@@ -34,7 +34,7 @@ You can choose to uninstall a version of PHP so long as:
 
 ### CLI
 
-When an additional version of PHP has been installed, you may reference it on the CLI via `phpx.x`, replacing the `x.x` with the version number (e.g. `php8.0`). The `php` binary will always point to the active CLI version (if changed from the default).
+When an additional version of PHP has been installed, you may reference it on the CLI via `phpx.x`, replacing the `x.x` with the version number (e.g. `php8.1`). The `php` binary will always point to the active CLI version (if changed from the default).
 
 ### Default PHP Installation
 
