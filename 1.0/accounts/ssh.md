@@ -4,7 +4,7 @@
 
 ## Adding Your SSH Key To Servers
 
-Before you provision a server for the first time, you should add your SSH keys to your account. You can do this from the [account page](https://forge.laravel.com/user/profile#/keys) in the Forge dashboard.
+Before you provision a server for the first time, you should add your SSH keys to your account. You can do this from the [account page](https://forge.laravel.com/user-profile/ssh-keys) in the Forge dashboard.
 
 As part of the provisioning process, Forge will add SSH keys to the `forge` account. This will allow you to SSH into the server as the `forge` user.
 
