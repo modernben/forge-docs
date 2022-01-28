@@ -42,7 +42,19 @@ You should upgrade the Nginx version on your server at your own risk. Upgrading 
 The latest version of Node.js is installed by Forge when it is provisioning a new server. However, as your server ages, you may wish to upgrade the version of Node.js:
 
 ```bash
-sudo apt-get install --only-upgrade nodejs
+curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+
+sudo apt-get install -y nodejs
+```
+
+[Node.js version information](https://nodejs.org/en/about/releases/)
+
+## Upgrading npm
+
+The latest version of npm is installed by Forge when provisioning new servers. However, you may upgrade the installed version of npm using the following commands:
+
+```bash
+sudo npm install npm@latest -g
 ```
 
 ## DigitalOcean Droplet Limit Exceeded
