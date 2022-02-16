@@ -8,7 +8,7 @@ Forge provides a command-line tool that you may use to manage your Forge servers
 
 ## Installation
 
-> **Requires [PHP 7.3+](https://php.net/releases/)**
+> **Requires [PHP 8.0+](https://php.net/releases/)**
 
 You may install the **[Forge CLI](https://github.com/laravel/forge-cli)** as a global [Composer](https://getcomposer.org) dependency:
 
