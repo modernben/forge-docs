@@ -10,17 +10,21 @@ When configuring your server, Forge configures FPM so that it can be restarted w
 echo "" | sudo -S service php8.1-fpm reload
 ```
 
-## Resetting The Sudo Password
+## Resetting The `forge` User Sudo Password
 
-Forge does not store your server's sudo password and is therefore unable to reset it for you. To reset the password, you'll need to contact your server provider or use the sudo password reset facilities on the server provider's dashboard.
+Forge does not store your server's `forge` user sudo password and is therefore unable to reset it for you. To reset the `forge` user sudo password, you'll need to contact your server provider and regain SSH access to your server as the `root` user.
 
-Once the password has been reset, Forge will be unable to SSH into your machine as `root`. This prevents you from editing PHP / Nginx configuration files from the Forge UI, and will also prevent various Forge functionality from working correctly. Before Forge can access your server, you will need to SSH into your Forge server as `forge` and reset the `root` users password:
+Once you are connected to your server as the `root` user, you should run the `passwd forge` command to redefine the `forge` user sudo password.
 
-```bash
-ssh "forge@your-ip-address"
-sudo -i
-passwd
-```
+#### Digital Ocean
+
+If your servers are managed by DigitalOcean, the following steps should assist you in resetting the `forge` user's sudo password using Digital Ocean's dashboard.
+
+1. First, on DigitalOcean's dashboard, click on the server name. Then, within the "Access" tab, click on "Reset Root Password". Usually, this operation restarts the server and sends the new `root` user's sudo password to your DigitalOcean account's associated email address.
+
+2. Next, still on the "Access" tab, click on "Launch Droplet Console" to gain access to your server terminal as the `root` user. During this step, you will be asked to redefine the `root` user's sudo password.
+
+3. Finally, execute the `passwd forge` terminal command as the `root` userto redefine the `forge` user's sudo password.
 
 ## Upgrading Composer
 
