@@ -8,7 +8,7 @@ Forge supports automated database backups that can be scheduled directly from yo
 
 :::warning Business Plan Only
 
-Database backups are only available on the Business plan.
+Database backups are only available on our "business" plan.
 :::
 
 ## Creating Backup Configurations

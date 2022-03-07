@@ -7,7 +7,7 @@
 Forge circles allow you to collaborate with team members that may manage servers and sites on your behalf. You can create as many circles as you would like and add as many team members as needed to each circle.
 
 :::warning Business Plan Only
-Circles are only available on the Business plan.
+Circles are only available on our "business" plan.
 :::
 
 ## Creating Circles
