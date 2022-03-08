@@ -121,3 +121,50 @@ grep 'sshd' /var/log/auth.log | tail -n 10
 
 If Forge is not able to connect to your server, you will not be able to manage it through the Forge dashboard until connectivity is restored.
 :::
+
+## "Too Many Open Files" Error
+
+If you are receiving an error stating that your server has "too many open files", you likely need to increase the maximum amount of file descriptors that your operating system is configured to allow at a given time. This may be particularly true if your server will be handling a very large number of incoming web requests.
+
+First, ensure the maximum number of "open files" is correctly configured based on the size of your server. Usually, the maximum number of open files allowed by the operating system should be about 100 files for every 1MB of RAM. For example, if your server has 4GB memory, the maximum number of open files can safely be set to `409600`.
+
+You can determine how many files your operating system currently allows to be opened at once by running the `sysctl fs.file-max` command. You can configure the existing setting by adding or modifying the following line in `/etc/sysctl.conf`:
+
+```
+fs.file-max = LIMIT_HERE 
+```
+
+While the instructions above set the maximum number of "open files" system-wide, you also need to specify these limits for each server user by editing the `/etc/security/limits.conf` file and adding the following lines:
+
+```
+root soft nofile LIMIT_HERE
+root hard nofile LIMIT_HERE
+forge soft nofile LIMIT_HERE
+forge hard nofile LIMIT_HERE
+```
+
+Of course, if your server contains additional users due to the use of "site isolation", those users also need to be added to the `/etc/security/limits.conf` file:
+
+```
+isolated-user soft nofile LIMIT_HERE
+isolated-user hard nofile LIMIT_HERE
+```
+
+Additionally, if the "too many open files" error was triggered by an Nginx process (very common on load balancers at scale), you will need to also add the `nginx` user to `/etc/security/limits.conf`:
+
+```
+nginx soft nofile LIMIT_HERE
+nginx hard nofile LIMIT_HERE
+```
+
+And, add the following directive to your server's `/etc/nginx/nginx.conf` file:
+
+```
+worker_rlimit_nofile LIMIT_HERE;
+```
+
+You should restart the Nginx service once this directive has been added to your Nginx configuration file:
+
+```
+service nginx restart
+```
