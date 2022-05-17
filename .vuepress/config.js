@@ -2,6 +2,10 @@ module.exports = {
     title: "Laravel Forge",
     base: '/docs/',
 
+    markdown: {
+        externalLinks: { target: '_self', rel: false }
+    },
+
     plugins: [
         ['sitemap', {
             hostname: 'https://forge.laravel.com',
@@ -29,7 +33,7 @@ module.exports = {
         sidebarDepth: 0,
 
         nav: [
-            { text: 'Home', link: 'https://forge.laravel.com' }
+            { text: 'Home', link: 'https://forge.laravel.com', target: '_self', rel: false }
         ],
 
         sidebar: {
