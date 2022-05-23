@@ -16,7 +16,7 @@ Forge can create and manage servers on the following cloud server providers:
 
 If your preferred server provider is not supported by Forge, you may use Forge's "Custom VPS" option to create your server. Custom VPS servers receive all of the same functionality as first-party supported server providers.
 
-[Learn more](https://forge.laravel.com/docs/1.0/servers/providers.html#bring-your-own-server)
+[Learn more](/1.0/servers/providers.html#bring-your-own-server)
 :::
 
 ### Linking Server Providers

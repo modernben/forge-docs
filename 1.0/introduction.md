@@ -4,25 +4,25 @@
 
 ## What is Forge?
 
-Laravel Forge is a server management and application deployment service. Forge takes the pain and hassle out of deploying servers and can be used to launch your next website. Whether your app is built with a framework such as <a href="https://github.com/laravel/laravel">Laravel</a>, <a href="https://github.com/symfony/symfony">Symfony</a>, <a href="https://statamic.com/">Statamic</a>, <a href="https://github.com/WordPress/WordPress">WordPress</a>, or is just a vanilla PHP application - Forge is the solution for you.
+Laravel Forge is a server management and application deployment service. Forge takes the pain and hassle out of deploying servers and can be used to launch your next website. Whether your app is built with a framework such as [Laravel](https://github.com/laravel/laravel), [Symfony](https://github.com/symfony/symfony), [Statamic](https://github.com/statamic/cms), [WordPress](https://github.com/WordPress/WordPress), or is just a vanilla PHP application - Forge is the solution for you.
 
 We live and breath PHP here at Forge, but Forge is also ready to handle other tech stacks too, such as NodeJS.
 
-After connecting to your preferred [server provider](https://forge.laravel.com/docs/1.0/servers/providers.html), Forge will be able to provision new servers for you in minutes. We offer you the ability to provision [multiple server types](https://forge.laravel.com/docs/1.0/servers/types.html) (e.g. web servers, database servers, load balancers) with the option of having an array of services configured for you to hit the ground running, including:
+After connecting to your preferred [server provider](/1.0/servers/providers.html), Forge will be able to provision new servers for you in minutes. We offer you the ability to provision [multiple server types](/1.0/servers/types.html) (e.g. web servers, database servers, load balancers) with the option of having an array of services configured for you to hit the ground running, including:
 
 - Nginx web server
-- <a href="https://forge.laravel.com/docs/1.0/servers/php.html">PHP</a> (multiple version support)
-- <a href="https://forge.laravel.com/docs/1.0/resources/databases.html">Database</a> (MySQL, Postgres, or MariaDB)
+- [PHP](/1.0/servers/php.html) (multiple version support)
+- [Database](/1.0/resources/databases.html) (MySQL, Postgres, or MariaDB)
 - Logrotate
-- <a href="https://forge.laravel.com/docs/1.0/resources/network.html#firewalls">UFW Firewall</a>
-- <a href="https://forge.laravel.com/docs/1.0/servers/php.html#opcache">OPcache</a>
-- <a href="https://forge.laravel.com/docs/1.0/resources/caches.html">Memcached</a>
-- <a href="https://forge.laravel.com/docs/1.0/resources/caches.html">Redis</a>
+- [UFW Firewall](/1.0/resources/network.html#firewalls)
+- [OPcache](/1.0/servers/php.html#opcache)
+- [Memcached](/1.0/resources/caches.html)
+- [Redis](/1.0/resources/caches.html)
 - MeiliSearch
 - Automatic Security Updates
 - And much more!
 
-In addition, Forge can assist you in managing <a href="https://forge.laravel.com/docs/1.0/resources/scheduler.html">scheduled jobs</a>, <a href="https://forge.laravel.com/docs/1.0/sites/queues.html">queue workers</a>, <a href="https://forge.laravel.com/docs/1.0/sites/ssl.html">TLS/SSL certificates</a>, and more. After your server has provisioned, you can manage and deploy your web applications using the Forge UI dashboard.
+In addition, Forge can assist you in managing [scheduled jobs](/1.0/resources/scheduler.html), [queue workers](/1.0/sites/queues.html), [TLS/SSL certificates](/1.0/sites/ssl.html), and more. After your server has provisioned, you can manage and deploy your web applications using the Forge UI dashboard.
 
 ## Learning More
 
