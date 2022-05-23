@@ -1,10 +1,10 @@
 export default ({router}) => {
+    if (process.env.NODE_ENV === 'production' || typeof window === 'undefined') {
+        return
+    }
+
     // Google analytics...
     ((window, document, tagType, gaId, undefined) => {
-        if (process.env.NODE_ENV !== 'production' || window === undefined) {
-            return
-        }
-
         const existingTag = document.getElementsByTagName(tagType)[0]
         const tag = document.createElement(tagType)
         tag.async = 1
