@@ -10,7 +10,7 @@ You may update your name, email, and password from Forge's [Authentication dashb
 
 ### Securing Your Account With Two Factor Authentication
 
-You may add additional security to your user account by setting up Two Factor Authentication (2FA) via Forge's [Authentication dashboard](https://forge.laravel.com/user-profile/authentication). Once you enable 2FA, please remember to scan the 2FA barcode into your authentication app, such as <a href="https://support.google.com/accounts/answer/1066447">Google Authenticator</a>.
+You may add additional security to your user account by setting up Two Factor Authentication (2FA) via Forge's [Authentication dashboard](https://forge.laravel.com/user-profile/authentication). Once you enable 2FA, please remember to scan the 2FA barcode into your authentication app, such as [Google Authenticator](https://support.google.com/accounts/answer/1066447).
 
 When enabling 2FA, Forge will display:
 
@@ -42,7 +42,7 @@ Deleting your account will cancel your subscription and delete all of your accou
 
 ### Sharing Your Account's Servers With Other Users
 
-If you need to allow other users to help manage the servers in your Forge account, you can create a <a href="https://forge.laravel.com/docs/1.0/accounts/circles.html">Circle</a>.
+If you need to allow other users to help manage the servers in your Forge account, you can create a [Circle](/1.0/accounts/circles.html).
 
 ## Billing
 
