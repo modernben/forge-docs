@@ -27,13 +27,9 @@ After connecting to your preferred [server provider](/1.0/servers/providers.html
 
 In addition, Forge can assist you in managing [scheduled jobs](/1.0/resources/scheduler.html), [queue workers](/1.0/sites/queues.html), [TLS/SSL certificates](/1.0/sites/ssl.html), and more. After your server has provisioned, you can manage and deploy your web applications using the Forge UI dashboard.
 
-## Learning More
+## Video Tutorials
 
 Laracasts has a comprehensive and **free** [video course](https://laracasts.com/series/learn-laravel-forge) on Forge. Feel free to review this course if you are new to Laravel Forge and want a video overview of its features.
-
-:::tip Open Source Documentation
-Forge's documentation is completely [open source](https://github.com/laravel/forge-docs)! Please consider adding to it if you find something missing.
-:::
 
 ## Forge IP Addresses
 
@@ -58,5 +54,4 @@ Forge provides a powerful API that allows you to manage your servers programatic
 
 ## Found Something Wrong?
 
-If you find something in the documentation that is confusing or incorrect, please consider submitting a pull request on [GitHub](https://github.com/laravel/forge-docs).
-
+Have you found something in the documentation that is confusing or incorrect? Forge's documentation is completely open source! Please consider submitting a pull request on [GitHub](https://github.com/laravel/forge-docs).
