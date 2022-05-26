@@ -2,7 +2,7 @@ module.exports = [
     {
         title: "Getting Started",
         collapsable: false,
-        children: ['introduction'],
+        children: ['introduction', 'cli'],
     },
     {
         title: "Accounts",
@@ -13,7 +13,6 @@ module.exports = [
             'source-control',
             'ssh',
             'api',
-            'cli',
             'cookbook',
             'tags',
         ]),
