@@ -27,6 +27,8 @@ Although the default template does not show support for TLSv1.3, Forge will auto
 
 Forge provides several variables that can be used within your templates to dynamically alter their content for new sites:
 
+<div v-pre>
+
 | Variable | Description |
 | -------- | ----------- |
 | `{{DIRECTORY}}` | The site's configured web directory, e.g. `/public` |
@@ -41,6 +43,8 @@ Forge provides several variables that can be used within your templates to dynam
 | `{{SITE}}` | The site's name, e.g. `laravel.com`. This differs from `{{DOMAINS}}` in that it does not include site aliases. |
 | `{{SITE_ID}}` | The site's ID, e.g. `12345` |
 | `{{USER}}` | The site's user, e.g. `forge` |
+
+</div>
 
 When using these variables, you should ensure that they exactly match the syntax shown above.
 
