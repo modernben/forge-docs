@@ -7,7 +7,7 @@ canonicalUrl: 'https://forge.laravel.com/docs/1.0/sites/packages.html'
 
 ## Overview
 
-Forge allows you to manage the "http-basic" portion of the selected site's user's `auth.json` Composer configuration file. The provided credentials are only stored on the server, not in Forge.
+Forge allows you to manage the "http-basic" portion of the selected site's user's `auth.json` Composer configuration file. The provided credentials are only stored on the server being managed by Forge - not within Forge itself.
 
 ### Site Composer Credentials
 
@@ -15,7 +15,7 @@ The Composer Credentials that you can manage on the site level only apply to thi
 
 ### Adding Credentials Before Installing a Repository
 
-Forge does not allow you to install credentials before you have installed a repository; instead it will redirect you back to the App tab. This is done because Forge recreates the site's base directory if the initial installation does not finish successfully. So if you need to provide local Composer Credentials, you first need to install a repository without "Install Composer Dependencies".
+Forge does not allow you to install credentials before you have installed a repository; instead, it will redirect you back to the "App" tab. This is because Forge recreates the site's base directory if the initial installation does not finish successfully. So, if you need to provide local Composer credentials, you first need to install a repository without the "Install Composer Dependencies" checked so that you can update the credentials after the repository is installed.
 
 ## Adding Credentials
 
@@ -31,10 +31,10 @@ Click "Save" in order to store these credentials in the user's global Composer c
 
 In order to remove Composer credentials, you can simply click on the red button displayed on the same line as the Repository URL.
 
-After removing credentials, please do not forget to click "Save" in order to store your new credentials configuration.
+After removing credentials, please do not forget to click "Save" in order to store your new credentials configuration on the server.
 
 # Updating Credentials
 
 Any credentials that are shown on the screen can be updated with any new adequate value.
 
-After updating the value, please do not forget to click the "Save" button in order your new credenials configuration.
+After updating the value, please do not forget to click the "Save" button in order your new credentials configuration on the server.

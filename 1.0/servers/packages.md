@@ -7,15 +7,15 @@ canonicalUrl: 'https://forge.laravel.com/docs/1.0/servers/packages.html'
 
 ## Overview
 
-Forge allows you to manage the "http-basic" portion of the selected server user's `auth.json` Composer configuration file. The provided credentials are only stored on the server, not in Forge.
+Forge allows you to manage the "http-basic" portion of the selected server user's `auth.json` Composer configuration file. The provided credentials are only stored on the server being managed by Forge - not in Forge itself.
 
 ### Global Composer Credentials
 
-The Composer Credentials that you can manage on the server level will apply to all sites that are served by the same Ubuntu user account. For example, if you have two sites installed under the `forge` user, both these sites will benefit from the globally stored credentials. If you need fine-grained control, please see the [Packages](/1.0/sites/packages.html) documentation for sites.
+The Composer credentials that you can manage on the server level will apply to all sites that are served by the same Ubuntu user account. For example, if you have two sites installed under the `forge` user, both these sites will benefit from the globally stored credentials. If you need fine-grained control, please see the [Packages](/1.0/sites/packages.html) documentation for sites.
 
 ### User Selection
 
-If you have sites configured with user isolation, you will first need to select the appropriate server user. The `auth.json` file is global in terms of each individual server user account.
+If you have sites configured with user isolation, you will first need to select the appropriate server user. The `auth.json` file is global within each individual server user account.
 
 ## Adding Credentials
 
@@ -31,10 +31,10 @@ Click "Save" in order to store these credentials in the user's global Composer c
 
 In order to remove Composer credentials, you can click on the red **X** button.
 
-After removing credentials, you must click "Save" in order to update the credentials configuration.
+After removing credentials, you must click "Save" in order to update the credentials configuration on the server.
 
 # Updating Credentials
 
 Any credentials that are shown on the screen can be updated with any new adequate value.
 
-After updating the credential, you must click "Save" in order to update the credentials configuration.
+After updating the credential, you must click "Save" in order to update the credentials configuration on the server.
