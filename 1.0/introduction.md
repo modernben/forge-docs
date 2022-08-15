@@ -38,6 +38,9 @@ In order to provision and communicate with your servers, Forge requires SSH acce
 - `159.203.161.246`
 - `159.203.163.240`
 - `68.183.145.91`
+- `159.203.150.232`
+- `159.203.150.216`
+- `45.55.124.124`
 
 You can also access the IP addresses via the following URL: [https://forge.laravel.com/ips-v4.txt](https://forge.laravel.com/ips-v4.txt). This is particularly useful if you intend on automating your network or firewall infrastructure.
 
