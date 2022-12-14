@@ -31,6 +31,8 @@ In addition, Forge can assist you in managing [scheduled jobs](/1.0/resources/sc
 
 Laracasts has a comprehensive and **free** [video course](https://laracasts.com/series/learn-laravel-forge-2022-edition/) on Forge. Feel free to review this course if you are new to Laravel Forge and want a video overview of its features.
 
+[![Laracasts](./img/laracasts-header.png)](https://laracasts.com/series/learn-laravel-forge-2022-edition/)
+
 ## Forge IP Addresses
 
 In order to provision and communicate with your servers, Forge requires SSH access to them. If you have set up your servers to restrict SSH access using IP allow lists, you must allow the following Forge IP addresses:
