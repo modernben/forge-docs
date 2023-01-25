@@ -60,7 +60,7 @@ module.exports = {
             href: 'https://fonts.gstatic.com',
         }],
         ['link', {
-            href: 'https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;800;900&display=swap',
+            href: 'https://fonts.bunny.net/css2?family=Nunito:wght@200;300;400;600;800;900&display=swap',
             rel: 'stylesheet',
         }],
         ['meta', {
