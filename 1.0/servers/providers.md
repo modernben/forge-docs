@@ -10,7 +10,7 @@ canonicalUrl: 'https://forge.laravel.com/docs/1.0/servers/providers.html'
 Forge can create and manage servers on the following cloud server providers:
 
 - [DigitalOcean](https://www.digitalocean.com/)
-- [Linode Cloud](https://www.linode.com/)
+- [Akamai / Linode Cloud](https://www.linode.com/)
 - [Amazon AWS](https://aws.amazon.com/)
 - [Vultr](https://www.vultr.com/)
 - [Hetzner Cloud](https://www.hetzner.com/cloud)
@@ -46,9 +46,9 @@ There are a few requirements you should review to ensure Forge works correctly w
 | HTTPS | TCP      | 443        | Custom | 0.0.0.0/0          |                  |
 | HTTPS | TCP      | 443        | Custom | ::/0               |                  |
 
-### Linode API Access
+### Akamai / Linode API Access
 
-When creating a [new Linode Cloud API token](https://cloud.linode.com/profile/tokens) for your Linode account, Linode will ask you to select which permissions are needed by the token. You will need to select the following permissions:
+When creating a [new Akamai Cloud API token](https://cloud.linode.com/profile/tokens) for your Akamai account, Akamai will ask you to select which permissions are needed by the token. You will need to select the following permissions:
 
 - **Linodes** - Read/Write
 - **IPs** - Read/Write
